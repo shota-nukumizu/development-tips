@@ -32,6 +32,6 @@ var characters = {
 };
 
 // emptys map
-var fighters = Map<Int, String>{}
-fighters[1] = 'Mario'
+var fighters = Map<Int, String>{};
+fighters[1] = 'Mario';
 ```
