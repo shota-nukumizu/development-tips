@@ -3,8 +3,10 @@
 FlutterのサイトやFlutterについて詳細に解説されている動画やネット記事たち
 
 * [Flutter](https://flutter.dev/)：本家。これがないとFlutterの開発が始まらない。
+* [Flutter - YouTube](https://www.youtube.com/c/flutterdev)：まさかの本家のYouTubeチャンネル
 * [Flutter Doc JP](https://flutter.ctrnost.com/)：Flutterの開発アイデアやテクニックを日本語にまとめたもの
 * [TheFlutterWay](https://www.youtube.com/c/TheFlutterWay)：FlutterのUIデザインを提供してくれるチャンネル。
+* [diegoveloper](https://www.youtube.com/c/diegoveloper/featured)：Flutterのアプリ開発メイン
 * [dbestech](https://www.youtube.com/c/dbestech)：FlutterやReact Nativeを使ったアプリ開発
 * [React Native VS Flutter](https://www.youtube.com/watch?v=X8ipUgXH6jw&t=6s&pp=ugMICgJqYRABGAE%3D)：React NativeとFlutterの徹底比較
 * [Fireship](https://www.youtube.com/c/Fireship)：ReactとFlutterのチュートリアル説明
