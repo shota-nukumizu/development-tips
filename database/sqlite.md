@@ -12,83 +12,21 @@
 * シンプルな構文
 * 長期に渡るサポート
 
-# 開発アイデア①-Flutter✕SQLiteの環境構築
+# 開発アイデア
 
 [SQLiteでのデータの永続化 - Flutter Doc JP](https://flutter.ctrnost.com/logic/sqlite/)<br>
 AndroidやiOS開発におけるSQLiteの活用方法。
 
-やり方は至ってシンプルで、
+[SQLiteが大量の小さなクエリの処理を得意とする理由 - GIGAZINE](https://gigazine.net/news/20210224-sqlite-many-queries/)<br>
+SQLiteと他のデータベースを比較して、SQLiteが数多くの小さなクエリの処理が得意とする理由が図解付きで説明されている。
 
-1. データモデルの定義
-2. データベースへ接続
-3. テーブルの作成
-4. データの登録
+[アプリとサーバの通信にJSONではなくSQLiteを使うと幸せになれるかもしれない条件まとめ - はてなブログ](https://animane.hatenablog.com/entry/2015/10/12/152533)
 
-```dart
-// データモデルの定義
-class Memo {
-  final int id;
-  final String text;
-  final int priority;
+[JSONで疲弊したら試したい、アプリのデータをSQLiteで受け渡すという選択肢 - はてなブログ](https://animane.hatenablog.com/entry/2015/10/09/164002)<br>
+JSONでスマホアプリ開発の基本が詳細に書かれている。(記事は古いけど)
 
-  Memo({this.id, this.text, this.priority});
-}
-```
+[Prisma - NestJS Docs](https://docs.nestjs.com/recipes/prisma)<br>
+SQLiteを活用したNestJSのデータベース構築ドキュメント。
 
-```dart
-// データベースへ接続
-final Future<Database> database = openDatabase(
-  join(await getDatabasesPath(), 'memo_database.db'),
-);
-```
-
-```dart
-// メモテーブルの作成
-final Future<Database> database = openDatabase(
-  join(await getDatabasesPath(), 'memo_database.db'),
-  onCreate: (db, version) {
-    return db.execute(
-      "CREATE TABLE memo(id INTEGER PRIMARY KEY, text TEXT, priority INTEGER)",
-    );
-  },
-  version: 1,
-);
-```
-
-```dart
-// データの登録
-class Memo {
-  final int id;
-  final String text;
-  final int priority;
-
-  Memo({this.id, this.text, this.priority});
-  
-  // Memoデータモデルにメソッドを追加
-  Map<String, dynamic> toMap() {
-    return {
-      'id': id,
-      'text': text,
-      'priority': priority,
-    };
-  }
-}
-
-// これでMemo型からMapに変換できるように！
-Future<void> insertMemo(Memo memo) async {
-  final Database db = await database;
-  await db.insert(
-    'memo',
-    memo.toMap(),
-    conflictAlgorithm: ConflictAlgorithm.replace,
-  );
-}
-
-final todo = Memo(
-  id: 0, 
-  text: 'Flutterで遊ぶ', 
-  priority: 1,
-);
-
-await insertMemo(todo);
-```
+[nest-api-example - GitHub](https://github.com/Emethium/nest-api-example)<br>
+SQLite✕NestJSで開発したREST APIのチュートリアル。
