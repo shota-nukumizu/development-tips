@@ -1,0 +1,3 @@
+# Flutterについて解説
+
+FlutterはGoogleが2108年に開発したAndroid/iOS両対応のモバイル開発フレームワークである。
