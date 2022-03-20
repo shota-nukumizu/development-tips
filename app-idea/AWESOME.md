@@ -56,3 +56,19 @@
 * 予め指定した時間を超越すると自動で通知が表示され、パスワードを解除しないと使えないスマホアプリ(スクリーンタイムアプリ)
 * 文房具専門サービス。
 * Web開発専用のキュレーションサイト(主にNestとDjango REST Framework)
+  
+# すごい個人開発
+
+[開設後3週間で収益10万円を得た個人開発サイトでやったことの全部を公開する](https://qiita.com/jabba/items/1a49e860a09a613b09d4#%E6%8A%80%E8%A1%93%E5%8A%9B%E3%81%A8%E4%BC%81%E7%94%BB%E5%8A%9B%E3%81%AE%E7%9B%B8%E9%96%A2)
+
+[技術書ランキングサイトをQiita記事の集計から作ったら、約4000冊の技術本が良い感じに並んだ](https://qiita.com/jabba/items/edefda09121877b79760)
+
+[新規Webサービスを一人で開発・運用する際に立ちはだかった壁とそれを乗り越えた方法まとめ](https://qiita.com/terubooon/items/08c145aac0dd10ea8cbc)
+
+[個人開発における開発プロセスを公開してみる](https://qiita.com/himatani/items/3b8301da2e889e962e5e)
+
+▲アイデアを構想する際に非常に参考になる。
+
+# 個人開発で開発されたサービス
+
+[テックブックランク](https://www.techbookrank.com/)
