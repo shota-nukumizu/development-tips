@@ -84,3 +84,6 @@ MongoDBとFlutterを連携させる際に必要なプラグインを取り揃え
 
 [How to Use Django with MongoDB - Tutorial](https://www.mongodb.com/compatibility/mongodb-and-django)<br>
 DjangoとMongoDBを連携させる方法
+
+[やってみようNoSQL MongoDBを最速で理解する](https://qiita.com/Brutus/items/8a67a4db0fdc5a33d549)<br>
+MongoDBの基本を理解するにはうってつけ。
