@@ -2,6 +2,12 @@
 
 MongoDBとは、オープンソースのドキュメント指向データベースのこと。NoSQLの分野で高いシェアを誇る。ドキュメント型なので、自由に構造を変更できるのが最大の特徴。
 
+基本的には無料だが、サーバレスの機能やRAM(メモリの作業領域)やデータベースのストレージを拡張したりセキュリティを向上させたりしたい場合は課金する必要がある。
+
+ちなみに公式でおすすめされているDedicatedプランは月額$57。
+
+機能は非常に高いが、経済的に余裕がある場合じゃないと有料課金は厳しいかもしれない...
+
 # 利点8つ
 
 * シンプルでわかりやすく、開発しやすい
@@ -17,6 +23,13 @@ MongoDBとは、オープンソースのドキュメント指向データベー�
 * RDBMSのように高度な結合操作
 * トランザクション処理
 
+# MongoDBが流行した背景
+
+MongoDBはNoSQLの一つ。最近は開発やYouTubeのコーディング解説動画でよく目にする。
+
+流行した背景―**ちょうどiOSのプラットフォームとSDKが開放されてモバイルアプリの開発が始まった頃に、爆発的にユーザ数が増えるシステムが多くなった。**そういった状況でデータベースがボトルネックになりがちで、スレーブに逃がせるreadよりも分散できないwriteのほうが追いつかなくなって詰んでしまうという逼迫感(追い詰められていて、ゆとりがない状態に陥る)があった。
+
+このような問題をSQLでは解決できないので、MongoDBのようなNoSQLのデータベースが開発された。
 
 # 開発アイデア
 
@@ -79,6 +92,14 @@ class DBConnection {
 }
 ```
 
+# 参考サイト
+
+[MongoDB](https://www.mongodb.com/)<br>
+本家の公式サイト。
+
+[MongoDB Docs](https://docs.mongodb.com/)<br>
+本家の公式ドキュメント。
+
 [flutter-mongodb-mobile - GitHub](https://github.com/amondnet/flutter-mongodb-mobile)<br>
 MongoDBとFlutterを連携させる際に必要なプラグインを取り揃えたもの
 
@@ -87,3 +108,6 @@ DjangoとMongoDBを連携させる方法
 
 [やってみようNoSQL MongoDBを最速で理解する](https://qiita.com/Brutus/items/8a67a4db0fdc5a33d549)<br>
 MongoDBの基本を理解するにはうってつけ。
+
+[MongoDB(mongoose) - NestJS Docs](https://docs.nestjs.com/techniques/mongodb)<br>
+NestJSでMongoDBを活用するためのチュートリアル
