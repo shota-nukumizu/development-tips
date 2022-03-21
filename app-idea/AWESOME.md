@@ -69,6 +69,8 @@
 
 [個人開発における開発プロセスを公開してみる](https://qiita.com/himatani/items/3b8301da2e889e962e5e)
 
+[【個人開発】人生を振り返ることができるアプリを作りました。](https://qiita.com/junya__ya/items/ff5008052c0ebf626901)
+
 ▲アイデアを構想する際に非常に参考になる。
 
 ## 海外のGitHub
