@@ -9,6 +9,7 @@
 * [Vuex](https://github.com/vuejs/vuex)
 * [Vue Router](https://github.com/vuejs/vue-router)
 * [Vue Class Component for TypeScript](https://github.com/vuejs/vue-class-component)
+* [Vuetify](https://github.com/vuetifyjs/vuetify)
 * [Vite](https://github.com/vitejs/vite)
 * [Next](https://github.com/vercel/next.js)
 * [React](https://github.com/reactjs/reactjs.org)
