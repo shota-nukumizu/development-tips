@@ -24,3 +24,4 @@
 * [Best Flutter UI templates](https://github.com/mitesh77/Best-Flutter-UI-Templates)
 * [Nest Router](https://github.com/nestjsx/nest-router)
 * [Socket.io](https://github.com/socketio/socket.io)
+* [Public APIs](https://github.com/public-apis/public-apis)
