@@ -25,3 +25,6 @@
 * [Nest Router](https://github.com/nestjsx/nest-router)
 * [Socket.io](https://github.com/socketio/socket.io)
 * [Public APIs](https://github.com/public-apis/public-apis)
+* [Amplication](https://github.com/amplication/amplication)
+* [Mantinedev](https://github.com/mantinedev/mantine)
+* [tRPC](https://github.com/trpc/trpc)
