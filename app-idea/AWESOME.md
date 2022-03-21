@@ -94,6 +94,7 @@
 * [nestjsx - GitHub](https://github.com/nestjsx)：NestJSの開発アイデア集。モジュールやライブラリ中心。
 * [Kamil Mysliwiec - GitHub](https://github.com/kamilmysliwiec)：NestJSの生みの親。開発に必要なアイデアが満載。
 * [Mark Pieszak - GitHub](https://github.com/MarkPieszak)：NestJS開発者。プロダクト中心。
+* [GomaGoma76 - GitHub](https://github.com/GomaGoma676)：日本人開発者。フルスタックプログラマー
 
 # 個人開発で開発されたサービス
 
