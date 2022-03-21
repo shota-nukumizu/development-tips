@@ -59,6 +59,8 @@
   
 # すごい個人開発
 
+## Web記事
+
 [開設後3週間で収益10万円を得た個人開発サイトでやったことの全部を公開する](https://qiita.com/jabba/items/1a49e860a09a613b09d4#%E6%8A%80%E8%A1%93%E5%8A%9B%E3%81%A8%E4%BC%81%E7%94%BB%E5%8A%9B%E3%81%AE%E7%9B%B8%E9%96%A2)
 
 [技術書ランキングサイトをQiita記事の集計から作ったら、約4000冊の技術本が良い感じに並んだ](https://qiita.com/jabba/items/edefda09121877b79760)
@@ -68,6 +70,15 @@
 [個人開発における開発プロセスを公開してみる](https://qiita.com/himatani/items/3b8301da2e889e962e5e)
 
 ▲アイデアを構想する際に非常に参考になる。
+
+## 海外のGitHub
+
+* [Kalle Hallden - GitHub](https://github.com/KalleHallden)：Flutter開発者
+* [freeCodeCamp - GitHub](https://github.com/freeCodeCamp)：世界最大規模のプログラミング学習サイト。チュートリアルが豊富で参考になるアイデアが沢山。
+* [Flutter Example Apps - GitHub](https://github.com/iampawan/FlutterExampleApps)：Flutterで開発されたアプリ集
+* [OnlineJudge - GitHub](https://github.com/QingdaoU/OnlineJudge)：中国の青島大学の学生が開発したEサイト。Vue✕Djangoで開発されている。
+* [Abu Anwar - GitHub](https://github.com/abuanwar072)：[The Flutter Way](https://www.youtube.com/c/TheFlutterWay)の管理者。FlutterのUIアイデアを収集する際には参考になる
+* [Fireship - GitHub](https://github.com/fireship-io/)：[Fireship](https://www.youtube.com/c/Fireship)の公式GitHub。React, AngularやFirebase、Flutterの開発の基本を理解したいならおすすめ
 
 # 個人開発で開発されたサービス
 
