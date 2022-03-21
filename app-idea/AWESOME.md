@@ -79,6 +79,21 @@
 * [OnlineJudge - GitHub](https://github.com/QingdaoU/OnlineJudge)：中国の青島大学の学生が開発したEサイト。Vue✕Djangoで開発されている。
 * [Abu Anwar - GitHub](https://github.com/abuanwar072)：[The Flutter Way](https://www.youtube.com/c/TheFlutterWay)の管理者。FlutterのUIアイデアを収集する際には参考になる
 * [Fireship - GitHub](https://github.com/fireship-io/)：[Fireship](https://www.youtube.com/c/Fireship)の公式GitHub。React, AngularやFirebase、Flutterの開発の基本を理解したいならおすすめ
+* [adrianhajdin - GitHub](https://github.com/adrianhajdin)：[JavaScript Mastery](https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A)の公式GitHub。ReactやJavaScript開発ならこれ一択
+* [Geeky Shows - GitHub](https://github.com/geekyshow1)：Django, Flutter, JavaScriptがメイン
+* [Coding For Enterpreneurs - GitHub](https://github.com/codingforentrepreneurs)：Django開発がメイン
+* [Laith Harb - GitHub](https://github.com/harblaith7)：JS/TS開発メイン
+* [Brad Traversy - GitHub](https://github.com/bradtraversy)：フルスタックプログラマー。[Traversy Media](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)の公式GitHub。
+* [Ruzie Nie - GitHub](https://github.com/Rea2er)：JavaScriptやAltJSメインのフルスタックプログラマー。Flutter対応。[Fullstack School](https://www.youtube.com/channel/UCWiC79M4FJ-Ylvk7lkk3n5A)管理人。
+* [divanov11 - GitHub](https://github.com/divanov11)：Django開発者
+* [Clever Programmers - GitHub](https://github.com/CleverProgrammers)：JS/TSメイン。(フルスタック)
+* [WebDevSimplified - GitHub](https://github.com/WebDevSimplified)：JavaScriptメイン。
+* [django CMS Association - Github](https://github.com/django-cms)：Djangoの顧客管理サイト。
+* [pennersr - Github](https://github.com/pennersr)：Django開発者。
+* [django-oscar - GitHub](https://github.com/django-oscar)：DjangoのEコマース専用のフレームワークサイト
+* [nestjsx - GitHub](https://github.com/nestjsx)：NestJSの開発アイデア集。モジュールやライブラリ中心。
+* [Kamil Mysliwiec - GitHub](https://github.com/kamilmysliwiec)：NestJSの生みの親。開発に必要なアイデアが満載。
+* [Mark Pieszak - GitHub](https://github.com/MarkPieszak)：NestJS開発者。プロダクト中心。
 
 # 個人開発で開発されたサービス
 
