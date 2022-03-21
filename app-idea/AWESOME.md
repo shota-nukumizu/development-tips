@@ -87,7 +87,7 @@
 * [Ruzie Nie - GitHub](https://github.com/Rea2er)：JavaScriptやAltJSメインのフルスタックプログラマー。Flutter対応。[Fullstack School](https://www.youtube.com/channel/UCWiC79M4FJ-Ylvk7lkk3n5A)管理人。
 * [divanov11 - GitHub](https://github.com/divanov11)：Django開発者
 * [Clever Programmers - GitHub](https://github.com/CleverProgrammers)：JS/TSメイン。(フルスタック)
-* [WebDevSimplified - GitHub](https://github.com/WebDevSimplified)：JavaScriptメイン。
+* [WebDevSimplified - GitHub](https://github.com/WebDevSimplified)：JavaScriptメイン。[Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified)管理人。
 * [django CMS Association - Github](https://github.com/django-cms)：Djangoの顧客管理サイト。
 * [pennersr - Github](https://github.com/pennersr)：Django開発者。
 * [django-oscar - GitHub](https://github.com/django-oscar)：DjangoのEコマース専用のフレームワークサイト
@@ -95,6 +95,7 @@
 * [Kamil Mysliwiec - GitHub](https://github.com/kamilmysliwiec)：NestJSの生みの親。開発に必要なアイデアが満載。
 * [Mark Pieszak - GitHub](https://github.com/MarkPieszak)：NestJS開発者。プロダクト中心。
 * [GomaGoma76 - GitHub](https://github.com/GomaGoma676)：日本人開発者。フルスタックプログラマー
+* [Academind - GitHub](https://github.com/academind)：フルスタック。
 
 # 個人開発で開発されたサービス
 
