@@ -28,3 +28,4 @@
 * [Amplication](https://github.com/amplication/amplication)
 * [Mantinedev](https://github.com/mantinedev/mantine)
 * [tRPC](https://github.com/trpc/trpc)
+* [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js)

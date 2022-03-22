@@ -117,3 +117,7 @@
 [テックブックランク](https://www.techbookrank.com/)
 
 [Return Youtube Dislike](https://github.com/Anarios/return-youtube-dislike)
+
+[Discord Clone](https://usk-discord-clone.netlify.app/)：GitHubは[コチラ](https://github.com/SOKHUONG/discord-clone)
+
+[Flutter Delivery](https://github.com/pedromassango/flutter_delivery)：Flutterで開発されたシンプルなデリバリーサービス
