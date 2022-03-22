@@ -124,3 +124,5 @@
 [Flutter Delivery](https://github.com/pedromassango/flutter_delivery)：Flutterで開発されたシンプルなデリバリーサービス
 
 [NestJS Blog API](https://github.com/Khaalidsub/youtube-projects/tree/main/nestjs/blog-rest)：NestJSで開発されたブログAPI
+
+[Taskly](https://github.com/JobinBiju/Taskly)：Flutterで開発されたタスク管理アプリ。
