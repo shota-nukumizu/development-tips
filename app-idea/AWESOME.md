@@ -73,6 +73,16 @@
 
 [サクっと作った英語学習サービスがバズって1週間以内にやったこと](https://qiita.com/yuno_miyako/items/54d3c57775e9310a3745)
 
+[Flutterで「MVVM・Provider・SQLite」を使った「検索バーアプリ」を作成する](https://zenn.dev/yass97/articles/abe3dd8f9b2c1b)
+
+[【React+TypeScript】Netflixのクローンを作るチュートリアル](https://zenn.dev/gunners6518/books/4c4672f32dd100)
+
+[FlutterでStateNotifier + Firebaese + ドメイン駆動設計を使ってInstagramを作ろう！](https://zenn.dev/mine2424/books/57232894259413)
+
+[Next.jsとAuth0で本管理サイトを作ってみた](https://zenn.dev/syu/articles/d42276d106e07f)
+
+[個人開発で知っておいたほうが良かったこと](https://zenn.dev/nobezawa/articles/knowledge-personal-developer)
+
 ▲アイデアを構想する際に非常に参考になる。
 
 ## 海外のGitHub
