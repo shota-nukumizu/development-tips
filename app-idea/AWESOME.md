@@ -122,3 +122,5 @@
 [Discord Clone](https://usk-discord-clone.netlify.app/)：GitHubは[コチラ](https://github.com/SOKHUONG/discord-clone)
 
 [Flutter Delivery](https://github.com/pedromassango/flutter_delivery)：Flutterで開発されたシンプルなデリバリーサービス
+
+[NestJS Blog API](https://github.com/Khaalidsub/youtube-projects/tree/main/nestjs/blog-rest)：NestJSで開発されたブログAPI
