@@ -3,7 +3,7 @@
 * [Django](https://github.com/django/django)
 * [Django REST Framework](https://github.com/encode/django-rest-framework)
 * [TypeScript](https://github.com/microsoft/TypeScript)
-* [Nuxt](https://github.com/nuxt/nuxt.js)
+* [Nuxt](https://github.com/nuxt/framework)
 * [Nuxt TypeScript](https://github.com/nuxt/typescript)
 * [Vuejs](https://github.com/vuejs/vue)
 * [Vuex](https://github.com/vuejs/vuex)
