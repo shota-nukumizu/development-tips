@@ -112,6 +112,7 @@
 * [GomaGoma76 - GitHub](https://github.com/GomaGoma676)：日本人開発者。フルスタックプログラマー
 * [Academind - GitHub](https://github.com/academind)：フルスタック。
 * [gabrielmcreynolds - GitHub](https://github.com/gabrielmcreynolds)：TypeScript開発者
+* [koladev32 - GitHub](https://github.com/koladev32)：Django✕TypeScript開発者
 
 # 個人開発で開発されたサービス
 
