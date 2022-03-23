@@ -105,6 +105,8 @@
 
 [Using Vue with TypeScript - Vue.js Docs](https://vuejs.org/guide/typescript/overview.html)
 
+[Nuxt.js(TypeScript)とDjango/RESTAPIでTodoアプリを作成する](https://niwakatech.info/nuxt-django-todo/)
+
 ▲アイデアを構想する際に非常に参考になる。
 
 ## GitHub
