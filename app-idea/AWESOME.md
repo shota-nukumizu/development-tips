@@ -89,6 +89,14 @@
 
 [React✕TypeScriptの基本型定義](https://zenn.dev/ogakuzuko/articles/react-typescript-for-beginner)
 
+[Vue.js in TypeScript で型定義をどこに書けばいいか](https://qiita.com/nunulk/items/1db35c4e3c422d122ea0)
+
+[Vue(TypeScript)でPropsに型定義する方法](https://jpdebug.com/p/2457351)
+
+[Vue✕TypeScript CheetSheet - GitHub](https://github.com/typescript-cheatsheets/vue)
+
+[Vue.js and TypeScript: A complete tutorial with examples](https://blog.logrocket.com/vue-typescript-tutorial-examples/)
+
 [【2021年版】Vue.js + TypeScriptの開発スタイル](https://tech-blog.rakus.co.jp/entry/20210901/frontend)
 
 [DjangoとReactの構築及びAPI連携について～構築編～](https://qiita.com/shiranon/items/8182445975dff4cf19a6)
