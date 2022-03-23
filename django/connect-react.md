@@ -89,94 +89,62 @@ export const headers = {
 }
 ```
 
-`src/pages/Login.tsx`
+`src/List.tsx`
 
 ```tsx
-import React, { useState } from "react";
-import * as Yup from "yup";
-import { useFormik } from "formik";
-import { useDispatch } from "react-redux";
-import axios from "axios";
-import { useHistory } from "react-router";
+import React, { Component } from "react";
+import { render } from "react-dom";
+import { service } from "service/service";
 
-function Login() {
-  const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
-  const dispatch = useDispatch();
-  const history = useHistory();
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+      loaded: false,
+      placeholder: "Loading"
+    };
+  }
 
-  // 送信するデータを型定義する
-  const handleLogin = (email: string, password: string) => {
-    //
-  };
+  componentDidMount() {
+    fetch("api/lead")
+      .then(response => {
+        if (response.status > 400) {
+          return this.setState(() => {
+            return { placeholder: "Something went wrong!" };
+          });
+        }
+        return response.json();
+      })
+      .then(data => {
+        this.setState(() => {
+          return {
+            data,
+            loaded: true
+          };
+        });
+      });
+  }
 
-  const formik = useFormik({
-    // データの初期化
-    initialValues: {
-      email: "",
-      password: "",
-    },
-    onSubmit: (values) => {
-      setLoading(true);
-      handleLogin(values.email, values.password);
-    },
-    validationSchema: Yup.object({
-      email: Yup.string().trim().required("Le nom d'utilisateur est requis"),
-      password: Yup.string().trim().required("Le mot de passe est requis"),
-    }),
-  });
-
-  return (
-    <div className="h-screen flex bg-gray-bg1">
-      <div className="w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-16">
-        <h1 className="text-2xl font-medium text-primary mt-4 mb-12 text-center">
-          Log in to your account 🔐
-        </h1>
-        <form onSubmit={formik.handleSubmit}>
-          <div className="space-y-4">
-            <input
-              className="border-b border-gray-300 w-full px-2 h-8 rounded focus:border-blue-500"
-              id="email"
-              type="email"
-              placeholder="Email"
-              name="email"
-              value={formik.values.email}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-            />
-            {formik.errors.email ? <div>{formik.errors.email} </div> : null}
-            <input
-              className="border-b border-gray-300 w-full px-2 h-8 rounded focus:border-blue-500"
-              id="password"
-              type="password"
-              placeholder="Password"
-              name="password"
-              value={formik.values.password}
-              onChange={formik.handleChange}
-              onBlur={formik.handleBlur}
-            />
-            {formik.errors.password ? (
-              <div>{formik.errors.password} </div>
-            ) : null}
-          </div>
-          <div className="text-danger text-center my-2" hidden={false}>
-            {message}
-          </div>
-
-          <div className="flex justify-center items-center mt-6">
-            <button
-              type="submit"
-              disabled={loading}
-              className="rounded border-gray-300 p-2 w-32 bg-blue-700 text-white"
-            >
-              Login
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  );
+  render() {
+    return (
+      <ul>
+        {this.state.data.map(contact => {
+          return (
+            <li key={contact.id}>
+              {contact.name} - {contact.email}
+            </li>
+          );
+        })}
+      </ul>
+    );
+  }
 }
 
-export default Login;
+export default App;
+
+const container = document.getElementById("app");
+render(<App />, container);
 ```
+
+これで連携できる。
