@@ -5,7 +5,7 @@
 * [TypeScript](https://github.com/microsoft/TypeScript)
 * [Nuxt](https://github.com/nuxt/framework)
 * [Nuxt TypeScript](https://github.com/nuxt/typescript)
-* [Vuejs](https://github.com/vuejs/vue)
+* [Vue](https://github.com/vuejs/core)
 * [Vuex](https://github.com/vuejs/vuex)
 * [Vue Router](https://github.com/vuejs/vue-router)
 * [Vue Class Component for TypeScript](https://github.com/vuejs/vue-class-component)
