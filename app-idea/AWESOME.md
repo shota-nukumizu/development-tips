@@ -83,6 +83,20 @@
 
 [個人開発で知っておいたほうが良かったこと](https://zenn.dev/nobezawa/articles/knowledge-personal-developer)
 
+[React✕TypeScriptの環境構築](https://future-architect.github.io/typescript-guide/react.html)
+
+[React✕TypeScript✕DjangoでWebアプリ開発チュートリアル(英語版)](https://dev.to/koladev/build-a-crud-application-using-django-and-react-5389)
+
+[React✕TypeScriptの基本型定義](https://zenn.dev/ogakuzuko/articles/react-typescript-for-beginner)
+
+[【2021年版】Vue.js + TypeScriptの開発スタイル](https://tech-blog.rakus.co.jp/entry/20210901/frontend)
+
+[DjangoとReactの構築及びAPI連携について～構築編～](https://qiita.com/shiranon/items/8182445975dff4cf19a6)
+
+[Vue.jsの基本記法を学んでTypeScriptで自在に処理をコーディングしよう](https://codezine.jp/article/detail/15267)
+
+[Using Vue with TypeScript - Vue.js Docs](https://vuejs.org/guide/typescript/overview.html)
+
 ▲アイデアを構想する際に非常に参考になる。
 
 ## 海外のGitHub
