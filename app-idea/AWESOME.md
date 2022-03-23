@@ -107,7 +107,7 @@
 
 ▲アイデアを構想する際に非常に参考になる。
 
-## 海外のGitHub
+## GitHub
 
 * [Awesome - GitHub](https://github.com/sindresorhus/awesome)：世界中の開発アイデア、無料で学べるプログラミング学習サイトを一つにまとめたリポジトリ。Web開発者なら必見
 * [Kalle Hallden - GitHub](https://github.com/KalleHallden)：Flutter開発者

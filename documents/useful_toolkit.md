@@ -17,6 +17,7 @@
 * [Vue StoreFront](https://github.com/vuestorefront/vue-storefront)
 * [Remotion](https://github.com/remotion-dev/remotion)
 * [Stream](https://github.com/GetStream/)
+* [Material Components](https://github.com/material-components)
 * [Sanity](https://github.com/sanity-io/sanity)
 * [GraphQL](https://github.com/graphql)
 * [Prisma](https://github.com/prisma/prisma)
