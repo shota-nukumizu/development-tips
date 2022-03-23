@@ -4,6 +4,7 @@
 
 * [Awesome Idea](https://github.com/sindresorhus/awesome)
 * [Awesome Vite](https://github.com/vitejs/awesome-vite)
+* [Awesome MaterialDesign](https://github.com/lightSky/Awesome-MaterialDesign)
 * [Awesome NestJS](https://github.com/nestjs/awesome-nestjs)
 * [Awesome Nuxt](https://github.com/Developerayo/awesome-nuxtjs)
 * [Awesome Django](https://github.com/shahraizali/awesome-django)
