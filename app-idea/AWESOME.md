@@ -73,6 +73,8 @@
 
 [サクっと作った英語学習サービスがバズって1週間以内にやったこと](https://qiita.com/yuno_miyako/items/54d3c57775e9310a3745)
 
+[エンジニアが個人開発したWebサービス・アプリ100個紹介します](https://note.com/haken_se_30manen/n/n4f379cc91f11)
+
 [Flutterで「MVVM・Provider・SQLite」を使った「検索バーアプリ」を作成する](https://zenn.dev/yass97/articles/abe3dd8f9b2c1b)
 
 [【React+TypeScript】Netflixのクローンを作るチュートリアル](https://zenn.dev/gunners6518/books/4c4672f32dd100)
