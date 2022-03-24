@@ -156,6 +156,8 @@
 
 [Social UI kit for Flutter](https://github.com/sopheamen007/app.mobile.social-ui-kit-app-ui)：Flutterで開発されたソーシャルメディアのアプリ
 
+[Social Network UI Made in Flutter](https://github.com/stevie1mat/Social-Network-UI-Made-In-Flutter)：Flutterで開発されたソーシャルアプリ
+
 [Flutter Todo for Django](https://github.com/ReeceRose/django-flutter-todo)：Django✕Flutterで連携したアプリ。
 
 [InkDrop](https://www.inkdrop.app/)
