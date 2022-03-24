@@ -13,6 +13,7 @@
 * [Vite](https://github.com/vitejs/vite)
 * [Next](https://github.com/vercel/next.js)
 * [React](https://github.com/reactjs/reactjs.org)
+* [React Router](https://github.com/remix-run/react-router)
 * [Redux](https://github.com/reduxjs/redux)
 * [React Native](https://github.com/facebook/react-native-website)
 * [React Hook Form](https://github.com/react-hook-form/react-hook-form)

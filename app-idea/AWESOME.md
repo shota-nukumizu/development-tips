@@ -139,6 +139,7 @@
 * [Academind - GitHub](https://github.com/academind)：フルスタック。
 * [gabrielmcreynolds - GitHub](https://github.com/gabrielmcreynolds)：TypeScript開発者
 * [koladev32 - GitHub](https://github.com/koladev32)：Django✕TypeScript開発者
+* [deepak07082 - GitHub](https://github.com/deepak07082)：Flutter開発者
 
 # 個人開発で開発されたサービス
 
@@ -159,6 +160,8 @@
 [Social Network UI Made in Flutter](https://github.com/stevie1mat/Social-Network-UI-Made-In-Flutter)：Flutterで開発されたソーシャルアプリ
 
 [Flutter Todo for Django](https://github.com/ReeceRose/django-flutter-todo)：Django✕Flutterで連携したアプリ。
+
+[Django-Flutter E-commerce](https://github.com/codewithrafiq/Django-flutter-eCommerce)：Django✕Flutterで開発したeコマースアプリ
 
 [InkDrop](https://www.inkdrop.app/)
 
