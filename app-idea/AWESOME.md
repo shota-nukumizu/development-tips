@@ -154,6 +154,8 @@
 
 [Taskly](https://github.com/JobinBiju/Taskly)：Flutterで開発されたタスク管理アプリ。
 
+[Social UI kit for Flutter](https://github.com/sopheamen007/app.mobile.social-ui-kit-app-ui)：Flutterで開発されたソーシャルメディアのアプリ
+
 [Flutter Todo for Django](https://github.com/ReeceRose/django-flutter-todo)：Django✕Flutterで連携したアプリ。
 
 [InkDrop](https://www.inkdrop.app/)
