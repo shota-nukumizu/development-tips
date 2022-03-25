@@ -141,6 +141,8 @@
 * [koladev32 - GitHub](https://github.com/koladev32)：Django✕TypeScript開発者
 * [deepak07082 - GitHub](https://github.com/deepak07082)：Flutter開発者
 * [Mahmoud Hesham](https://github.com/MahmoudHesham099)：Flutterプログラマー
+* [Pedro Massango](https://github.com/pedromassango)：Flutterプログラマー
+* [Deven Joshi](https://github.com/deven98)
 
 # 個人開発で開発されたサービス
 
@@ -169,3 +171,9 @@
 [買い物メモkaumo](https://apps.apple.com/jp/app/%E8%B2%B7%E3%81%84%E7%89%A9%E3%83%AA%E3%82%B9%E3%83%88-%E8%B2%B7%E3%81%84%E7%89%A9%E3%83%A1%E3%83%A2%E3%81%8B%E3%82%89%E3%82%B5%E3%82%AF%E3%83%83%E3%81%A8todo%E4%BD%9C%E6%88%90/id1467208639)
 
 [集中タイマー](https://timer.umiremix.com/ja/)
+
+[Fluttergram](https://github.com/mdanics/fluttergram)
+
+[Xtimer](https://github.com/pedromassango/xtimer-flutter-app)
+
+[Medium App for Flutter](https://github.com/deven98/MediumAppFlutter)
