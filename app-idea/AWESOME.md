@@ -142,7 +142,8 @@
 * [deepak07082 - GitHub](https://github.com/deepak07082)：Flutter開発者
 * [Mahmoud Hesham](https://github.com/MahmoudHesham099)：Flutterプログラマー
 * [Pedro Massango](https://github.com/pedromassango)：Flutterプログラマー
-* [Deven Joshi](https://github.com/deven98)
+* [Deven Joshi](https://github.com/deven98)：Flutterプログラマ
+* [Pawann Kumaarr](https://github.com/iampawan)：Flutterプログラマ
 
 # 個人開発で開発されたサービス
 
@@ -177,3 +178,5 @@
 [Xtimer](https://github.com/pedromassango/xtimer-flutter-app)
 
 [Medium App for Flutter](https://github.com/deven98/MediumAppFlutter)
+
+[Flutter✕StackOverFlow App](https://github.com/iampawan/FlutterStackOverflowApp)
