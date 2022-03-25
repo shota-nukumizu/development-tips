@@ -144,6 +144,7 @@
 * [Pedro Massango](https://github.com/pedromassango)：Flutterプログラマー
 * [Deven Joshi](https://github.com/deven98)：Flutterプログラマ
 * [Pawann Kumaarr](https://github.com/iampawan)：Flutterプログラマ
+* [OpenFlutter](https://github.com/OpenFlutter)：中国のFlutterコミュニティ
 
 # 個人開発で開発されたサービス
 
