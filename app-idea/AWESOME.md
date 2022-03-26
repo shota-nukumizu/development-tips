@@ -145,6 +145,7 @@
 * [Deven Joshi](https://github.com/deven98)：Flutterプログラマ
 * [Pawann Kumaarr](https://github.com/iampawan)：Flutterプログラマ
 * [OpenFlutter](https://github.com/OpenFlutter)：中国のFlutterコミュニティ
+* [Sonu Sharma](https://github.com/TheAlphamerc)：インドのFlutterプログラマー
 
 # 個人開発で開発されたサービス
 
