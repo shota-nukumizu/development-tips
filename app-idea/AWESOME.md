@@ -146,6 +146,8 @@
 * [Pawann Kumaarr](https://github.com/iampawan)：Flutterプログラマ
 * [OpenFlutter](https://github.com/OpenFlutter)：中国のFlutterコミュニティ
 * [Sonu Sharma](https://github.com/TheAlphamerc)：インドのFlutterプログラマー
+* [FilledStacks](https://github.com/FilledStacks)：Flutterプログラマー
+* [doctorcode](https://github.com/doctorcode9)：Flutterアプリ開発者
 
 # 個人開発で開発されたサービス
 
