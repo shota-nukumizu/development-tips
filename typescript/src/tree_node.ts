@@ -1,22 +1,15 @@
-interface TreeNode {}
-
-class Branch implements TreeNode {
-    left: TreeNode
-    right: TreeNode
-    constructor(left: TreeNode, right: TreeNode) {
+class Branch<T> {
+    left: T | Branch<T>
+    right: T | Branch<T>
+    constructor(left: T | Branch<T>, right: T | Branch<T>) {
         this.left = left
         this.right = right
     }
 }
 
-class Leaf implements TreeNode {
-    value: string
-    constructor(value: string) {
-        this.value = value
-    }
-}
+type Tree<X> = void | X | Branch<X>
 
-let helloWorld: TreeNode = new Branch(new Leaf('Hello'), new Leaf('World'))
-let greeting: TreeNode = new Branch(new Leaf('greeting'), helloWorld)
+let helloworld: Tree<string> = new Branch<string>('Hello', 'World')
+let greeting: Tree<string> = new Branch<string>('greeting', helloworld)
 
 console.log(greeting)
