@@ -19,6 +19,7 @@
 * [React Hook Form](https://github.com/react-hook-form/react-hook-form)
 * [NestJS](https://github.com/nestjs/nest)
 * [Flutter](https://github.com/flutter/flutter)
+* [Socket.io](https://github.com/socketio/socket.io)
 * [Material UI](https://github.com/mui/material-ui)
 * [Baseweb](https://github.com/uber/baseweb)
 * [Firebase](https://github.com/firebase/firebase-tools)
