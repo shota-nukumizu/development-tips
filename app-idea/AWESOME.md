@@ -116,6 +116,8 @@
 * [Awesome - GitHub](https://github.com/sindresorhus/awesome)：世界中の開発アイデア、無料で学べるプログラミング学習サイトを一つにまとめたリポジトリ。Web開発者なら必見
 * [Kalle Hallden - GitHub](https://github.com/KalleHallden)：Flutter開発者
 * [freeCodeCamp - GitHub](https://github.com/freeCodeCamp)：世界最大規模のプログラミング学習サイト。チュートリアルが豊富で参考になるアイデアが沢山。
+* [The Algorithms](https://github.com/TheAlgorithms)：各種言語のアルゴリズムを取り揃えている。
+* [project-based-learning](https://github.com/practical-tutorials/project-based-learning)：各種言語のチュートリアルが豊富
 * [Flutter Example Apps - GitHub](https://github.com/iampawan/FlutterExampleApps)：Flutterで開発されたアプリ集
 * [OnlineJudge - GitHub](https://github.com/QingdaoU/OnlineJudge)：中国の青島大学の学生が開発したEサイト。Vue✕Djangoで開発されている。
 * [Abu Anwar - GitHub](https://github.com/abuanwar072)：[The Flutter Way](https://www.youtube.com/c/TheFlutterWay)の管理者。FlutterのUIアイデアを収集する際には参考になる
