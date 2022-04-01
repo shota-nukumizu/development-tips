@@ -37,3 +37,25 @@ Webサイトを公開するためのホスティングサービス。
 7. `firebase deploy`へ
 
 都度GitHubとの連携がある。
+
+# firebaseオブジェクト
+
+```js
+import firebase from “firebase”;
+
+const firebaseConfig = {
+    apiKey: "adfasfavnaAJFDKCnjkasjlkASJLFNKSA",
+    authDomain: "myapp-d92bc.firebaseapp.com",
+    projectId: "myapp-d92bc",
+    storageBucket: "myapp-d92bc.appspot.com",
+    messagingSenderId: "15645156456156",
+    appId: "1:15645156456156:web:1516532e652c5459f5f6b44",
+};
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.firestore();
+const auth = firebaseApp.auth();
+
+export { auth };
+export default db;
+```
