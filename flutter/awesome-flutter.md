@@ -3,6 +3,7 @@
 FlutterのサイトやFlutterについて詳細に解説されている動画やネット記事たち
 
 * [Flutter](https://flutter.dev/)：本家。これがないとFlutterの開発が始まらない。
+* [Flutter Awesome](https://flutterawesome.com/)：Flutterの開発アイデアを凝縮したもの
 * [Flutter - YouTube](https://www.youtube.com/c/flutterdev)：まさかの本家のYouTubeチャンネル
 * [Android - YouTube](https://www.youtube.com/channel/UC9M7-jzdU8CVrQo1JwmIdWA)：Android公式のYouTubeチャンネル。
 * [Flutter Doc JP](https://flutter.ctrnost.com/)：Flutterの開発アイデアやテクニックを日本語にまとめたもの
