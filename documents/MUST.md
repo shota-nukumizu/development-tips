@@ -21,5 +21,6 @@
 * [Flutter](https://github.com/flutter/flutter)
 * [Socket.io](https://github.com/socketio/socket.io)
 * [Material UI](https://github.com/mui/material-ui)
+* [tailwindcss](https://github.com/tailwindlabs/tailwindcss)
 * [Baseweb](https://github.com/uber/baseweb)
 * [Firebase](https://github.com/firebase/firebase-tools)
