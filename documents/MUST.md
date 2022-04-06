@@ -18,6 +18,7 @@
 * [React Native](https://github.com/facebook/react-native-website)
 * [React Hook Form](https://github.com/react-hook-form/react-hook-form)
 * [NestJS](https://github.com/nestjs/nest)
+* [adonisjs](https://github.com/adonisjs/core)
 * [Flutter](https://github.com/flutter/flutter)
 * [Socket.io](https://github.com/socketio/socket.io)
 * [Material UI](https://github.com/mui/material-ui)
