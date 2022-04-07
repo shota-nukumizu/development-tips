@@ -18,8 +18,8 @@ type Tree<X> = void | X | Branch<X>
 ここで２つの変数であるhelloworldとgreetingを用意する。
 基本的な書き方はJavaScriptと全く同じ。
 */
-let helloworld: Tree<string> = new Branch<string>('Hello', 'World')
-let greeting: Tree<string> = new Branch<string>('greeting', helloworld)
+let helloworld: Tree<string> = new Branch<string>('Hello', 'World') // 子構造
+let greeting: Tree<string> = new Branch<string>('greeting', helloworld) // 親構造
 
 console.log(greeting)
 
