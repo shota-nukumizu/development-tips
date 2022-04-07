@@ -111,6 +111,10 @@
 
 [Full-stack app tutorial with NestJS and React](https://blog.logrocket.com/full-stack-app-tutorial-nestjs-react/#creating-the-middleware)
 
+[POSTD - ニジボックスが提供するエンジニアに向けたキュレーションメディア](https://postd.cc/)：主にデータサイエンスやReact, JavaScriptやNodejsに関する情報が閲覧できる。
+
+[Building Nest.js Microservices is that simple! - Vue StoreFront Blog](https://blog.vuestorefront.io/nest-js-microservices-example/)
+
 ▲アイデアを構想する際に非常に参考になる。
 
 ## GitHub
