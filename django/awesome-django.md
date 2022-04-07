@@ -10,6 +10,7 @@ Djangoを使った開発アイデアを一覧形式でまとめたやつ。
 * [Django GraphQL JWT - GitHub](https://github.com/flavors/django-graphql-jwt)
 * [Django GraphQL User Authentication - GitHub](https://github.com/veryacademy/YT-GraphQL-User-Authentication-GraphQL-Auth)
 * [Graphene - GitHub](https://github.com/graphql-python/graphene-django)
+* [django-graphql - GitHub](https://github.com/PedroBern/django-graphql-auth)
 
 # Djangoで開発できるプロダクト
 
