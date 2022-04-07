@@ -115,6 +115,8 @@
 
 [Building Nest.js Microservices is that simple! - Vue StoreFront Blog](https://blog.vuestorefront.io/nest-js-microservices-example/)
 
+[ブロックチェーンエンジニアの年収は？ブロックチェーンエンジニアの仕事や年収アップに必要なスキルを解説](https://freelance-start.com/articles/310)
+
 ▲アイデアを構想する際に非常に参考になる。
 
 ## GitHub
