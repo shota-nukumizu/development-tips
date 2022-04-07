@@ -109,6 +109,8 @@
 
 [Nuxt.js(TypeScript)とDjango/RESTAPIでTodoアプリを作成する](https://niwakatech.info/nuxt-django-todo/)
 
+[Full-stack app tutorial with NestJS and React](https://blog.logrocket.com/full-stack-app-tutorial-nestjs-react/#creating-the-middleware)
+
 ▲アイデアを構想する際に非常に参考になる。
 
 ## GitHub
