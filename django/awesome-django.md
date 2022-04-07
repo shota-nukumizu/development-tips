@@ -6,6 +6,10 @@ Djangoを使った開発アイデアを一覧形式でまとめたやつ。
 * [Top 27 Python Django Project Ideas – Master Web Development with Python](https://data-flair.training/blogs/django-project-ideas/)
 * [25 Exciting Best Django Project Ideas & Topics For Beginners [2022]](https://www.upgrad.com/blog/django-project-ideas-topics-beginners/)
 * [25 Exciting Best Django Project Ideas & Topics For Beginners [2022]](https://www.mygreatlearning.com/blog/top-django-projects-in-2022/)
+* [Django GraphQL JWT - Docs](https://django-graphql-jwt.domake.io/)
+* [Django GraphQL JWT - GitHub](https://github.com/flavors/django-graphql-jwt)
+* [Django GraphQL User Authentication - GitHub](https://github.com/veryacademy/YT-GraphQL-User-Authentication-GraphQL-Auth)
+* [Graphene - GitHub](https://github.com/graphql-python/graphene-django)
 
 # Djangoで開発できるプロダクト
 
