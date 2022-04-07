@@ -117,6 +117,8 @@
 
 [ブロックチェーンエンジニアの年収は？ブロックチェーンエンジニアの仕事や年収アップに必要なスキルを解説](https://freelance-start.com/articles/310)
 
+[GeeksforGeeks](https://www.geeksforgeeks.org/)
+
 ▲アイデアを構想する際に非常に参考になる。
 
 ## GitHub
