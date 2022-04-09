@@ -16,7 +16,8 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Flutter UI](https://www.youtube.com/playlist?list=PLgGjX33Qsw-FIWxoI2IJf7zsHyxzuFfK5)：Flutterで開発されたUIキット。作り方が動画で簡単に示されている
 * [Flutter Tutorials for Beginners](https://www.youtube.com/watch?v=GQJovou6zuE&list=PL3nPgdhXQtHfC53Kl7oWsoq7TSX3e64Y1)：Flutterのチュートリアル集
 * [Taskly](https://github.com/JobinBiju/Taskly)：Flutterで開発されたタスク管理アプリ
-
+* [Flutter Samples](https://flutter.github.io/samples/#)：Flutterのアニメーションのサンプルをリスト形式で並べたキュレーションメディア
+* [Flutter API reference documentation](https://api.flutter.dev/index.html)：Flutterの公式APIドキュメント。
 
 # React Native App
 
