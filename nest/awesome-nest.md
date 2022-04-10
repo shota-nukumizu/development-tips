@@ -6,3 +6,4 @@
 # awesome-article
 
 * [Making authentication logic for Flutter + Nestjs](https://djkooks.github.io/authentication-with-flutter-nestjs)
+* [NestJSでJWTを使った認証を実装する](https://zenn.dev/uttk/articles/9095a28be1bf5d)
