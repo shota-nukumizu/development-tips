@@ -30,14 +30,20 @@ Webアプリで運用する予定。主に使用する技術はDjango REST Frame
 
 その日一日の自分のスマホ使用時間を計測できるスクリーンタイムアプリ。Androidのデータ使用時間のUIを利用しようか考えている。
 
-WebやAndroid両方でリリースする予定。Flutterで開発か？
+WebやAndroid両方でリリースする予定。Flutterで開発。
+
+搭載しようと思っている機能は以下の通り。
+
+* アプリの使用時間をリスト化して、降順に表示
+* 一日のアプリの使用時間を表示
+* 一日のアプリの使用時間を一覧で表示して、使用時間の上限を超えた場合はパスワードを入力する
 
 
 ## 「Whatsapp」形式のチャットアプリ
 
 「Whatsapp」形式でチャットアプリを開発中。フルスタックに関する質問とその回答を提供できるWebサービスを開発中。
 
-Django REST Framework✕Flutterで開発。
+Django REST Framework✕Flutterで開発。**これらは単に案件を獲得するためのプロジェクト**
 
 
 ## タスク管理アプリ
@@ -57,6 +63,8 @@ Django REST Framework✕Flutterで開発。
 
 Python、TypeScript、Dartをメインに情報発信する予定。
 
+基本文法や簡単なアプリ、おすすめのYouTube(Web開発に特化した)を紹介する予定。
+
 
 ## ポモドーロ・テクニック✕Todoアプリの機能を併せ持ったWebアプリ・スマホアプリ
 
@@ -65,12 +73,12 @@ WebやAndroid両方ともリリースする予定。
 
 ## Discordクローン
 
-NestJS✕Nuxtで開発予定
+NestJS✕Nuxtで開発予定。基本的な設定はDiscordと同じ。
 
 
 ## Stackoverflowクローン
 
-Next✕Nestで開発予定
+Next✕Nestで開発予定。(もしくはDjango REST Framework)基本的な機能はStackOverflowと全く同じ。
 
 ## 読書共有サービス
 
@@ -86,5 +94,7 @@ Nest✕Next✕Tailwindで開発予定
 * Firebase
 * SQLite
 * MongoDB
+* Tailwind CSS
+* Material UI(Vuetify, MUIメインか)
 
 主にマイクロサービスやスマホアプリメインで開発を進めていく。
