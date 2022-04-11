@@ -67,3 +67,25 @@ Flutterのアップデート後に、多くのパッケージが壊れること�
 `getx`の`SmartManagement`を使えば、使われていないものはすべてメモリから削除される。言い換えれば、プログラム内の使われていない依存関係を明確にしてその使用量を削減できる。
 
 Viewとロジックを分離することで、それぞれの部分を個別にテストしやすい
+
+# example
+
+```dart
+import 'package:get/get.dart';
+
+void main() => runApp(MaterialApp(home: Home()));
+
+class Home extends StatelessWidget {
+  var count = 0.obs;
+  @override
+  Widget build(context) => Scaffold(
+      appBar: AppBar(title: Text("counter")),
+      body: Center(
+        child: Obx(() => Text("$count")),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () => count ++,
+      ));
+}
+```
