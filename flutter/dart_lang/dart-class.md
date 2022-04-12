@@ -77,3 +77,27 @@ class PilotedCraft extends Spacecraft with Piloted {
   // ···
 }
 ```
+
+# sample
+
+Dartでクラス定義。
+
+```dart
+// Studentクラスを定義する
+class Student {
+  String name;
+  Int grade;
+
+  // 基本的にコンストラクタはクラス名と同じにする
+  Student(this.name, this.grade) {
+    this.name = name;
+    this.grade = grade;
+  }
+}
+
+// プログラムを実行する
+void main(List<String> arguments) {
+  var student = Student('Takeshi', 4);
+  print('The student's name is ${student.name}. Grade: ${student.grade}');
+}
+```
