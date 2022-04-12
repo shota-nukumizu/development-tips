@@ -119,6 +119,8 @@
 
 [GeeksforGeeks](https://www.geeksforgeeks.org/)
 
+[Flask✕機械学習で開発する物体検知Webアプリ](https://github.com/ml-flaskbook/flaskbook)
+
 ▲アイデアを構想する際に非常に参考になる。
 
 ## GitHub
