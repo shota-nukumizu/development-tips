@@ -18,6 +18,7 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Taskly](https://github.com/JobinBiju/Taskly)：Flutterで開発されたタスク管理アプリ
 * [Flutter Samples](https://flutter.github.io/samples/#)：Flutterのアニメーションのサンプルをリスト形式で並べたキュレーションメディア
 * [Flutter API reference documentation](https://api.flutter.dev/index.html)：Flutterの公式APIドキュメント。
+* [Best Flutter UI Templates](https://github.com/mitesh77/Best-Flutter-UI-Templates)：FlutterのUIテンプレート一覧
 
 # React Native App
 
