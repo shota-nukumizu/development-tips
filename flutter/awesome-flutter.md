@@ -19,6 +19,8 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Flutter Samples](https://flutter.github.io/samples/#)：Flutterのアニメーションのサンプルをリスト形式で並べたキュレーションメディア
 * [Flutter API reference documentation](https://api.flutter.dev/index.html)：Flutterの公式APIドキュメント。
 * [Best Flutter UI Templates](https://github.com/mitesh77/Best-Flutter-UI-Templates)：FlutterのUIテンプレート一覧
+* [WhatsApp Chat](https://github.com/VB10/WhatsApp-Chat)：WhatsAppのクローン
+* [REST APP](https://github.com/theindianappguy/rest_app)：Flutterで開発された休憩アプリ
 
 # React Native App
 

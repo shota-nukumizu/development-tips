@@ -4,6 +4,18 @@ Androidアプリ使用時間の統計。
 
 # 使い方
 
+## xmlファイルの設定
+
+まずは以下のプログラムを書いてパッケージを機能させる
+
+```xml
+<uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+```
+
+## dartプログラム
+
 ```dart
 import 'package:usage_stats/usage_stats.dart';
 
