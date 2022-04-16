@@ -22,6 +22,7 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [WhatsApp Chat](https://github.com/VB10/WhatsApp-Chat)：WhatsAppのクローン
 * [REST APP](https://github.com/theindianappguy/rest_app)：Flutterで開発された休憩アプリ
 * [Flutter-Social](https://github.com/emrade/flutter-social)：Flutterで開発されたSNSアプリ
+* [Dating-APP](https://github.com/ngocaiyeu/dating-app-client)：Flutterで開発されたマッチングアプリのサンプル
 
 # React Native App
 
