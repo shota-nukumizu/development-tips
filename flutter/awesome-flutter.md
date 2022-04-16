@@ -21,6 +21,7 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Best Flutter UI Templates](https://github.com/mitesh77/Best-Flutter-UI-Templates)：FlutterのUIテンプレート一覧
 * [WhatsApp Chat](https://github.com/VB10/WhatsApp-Chat)：WhatsAppのクローン
 * [REST APP](https://github.com/theindianappguy/rest_app)：Flutterで開発された休憩アプリ
+* [Flutter-Social](https://github.com/emrade/flutter-social)：Flutterで開発されたSNSアプリ
 
 # React Native App
 
