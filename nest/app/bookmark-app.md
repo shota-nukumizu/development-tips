@@ -50,7 +50,3 @@
             edit-user.dto.ts
             index.ts
 ```
-
-# 参考サイト
-
-* [NestJS API Tutorial](https://github.com/vladwulf/nestjs-api-tutorial)
