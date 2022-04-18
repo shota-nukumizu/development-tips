@@ -123,6 +123,12 @@
 [Flask✕機械学習で開発する物体検知Webアプリ](https://github.com/ml-flaskbook/flaskbook)
 ▲アイデアを構想する際に非常に参考になる。
 
+[fullStackChatApp](https://github.com/andresrodriguez55/fullStackChatApp)：Django✕Flutterで開発されたチャットアプリ
+
+[NestJS MicroService Example](https://github.com/Denrox/nestjs-microservices-example)：NestJSで開発されたマイクロサービス
+
+[Realworld](https://github.com/lujakob/nestjs-realworld-example-app)：NestJSで開発されたアプリ
+
 ## GitHub
 
 * [Awesome - GitHub](https://github.com/sindresorhus/awesome)：世界中の開発アイデア、無料で学べるプログラミング学習サイトを一つにまとめたリポジトリ。Web開発者なら必見
