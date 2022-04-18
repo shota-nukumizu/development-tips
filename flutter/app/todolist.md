@@ -4,6 +4,16 @@
 
 ## ディレクトリ構造
 
+Flutter開発では主に`lib`フォルダにUIやデータの処理などのアプリケーションの核となる部分を記述する。**言い換えれば、`lib`フォルダを見ればアプリの構造をソースコードから把握できるのだ。**
+
+ただし、実際に挙動を確認したいとき
+
+```
+flutter pub get
+```
+
+以上のコマンドを入力してアプリを動かすのに必要な`dart_tool`をインストールしておく必要があるのでご用心。
+
 ```
 C:.
 │  .flutter-plugins
@@ -51,6 +61,42 @@ C:.
                 button.dart
                 input_field.dart
                 task_tile.dart
+```
+
+`main.dart`
+
+```dart
+// 主に外部パッケージをインポート
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
+
+// こちらは自作のファイルをインポート
+import 'package:task_management/db/db_helper.dart';
+import 'package:task_management/services/theme_services.dart';
+import 'package:task_management/ui/pages/home_page.dart';
+import 'package:task_management/ui/theme.dart';
+
+// ネットワーク通信なので非同期通信を使っている
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await DBHelper.initDb();
+  await GetStorage.init();
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: Themes.light,
+      darkTheme: Themes.dark,
+      themeMode: ThemeService().theme,
+      home: HomePage(), // 表示する画面
+    );
+  }
+}
 ```
 
 
@@ -216,4 +262,37 @@ C:.
 │
 └─test
         widget_test.dart
+```
+
+`main.dart`
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
+import 'package:taskly/app/theme/app_theme.dart';
+
+import 'app/routes/app_pages.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations(
+      [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+  await GetStorage.init();
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return GetMaterialApp(
+      theme: appThemeData[AppTheme.YellowLight],
+      debugShowCheckedModeBanner: false,
+      title: "Taskly",
+      initialRoute: AppPages.INITIAL,
+      getPages: AppPages.routes,
+    );
+  }
+}
 ```
