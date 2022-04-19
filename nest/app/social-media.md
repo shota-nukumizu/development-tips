@@ -168,5 +168,4 @@ C:.
             invalid-token.exception.ts
             user-already-active.exception.ts
             user-not-found.exception.ts
-
 ```
