@@ -204,8 +204,10 @@
 
 [Medium App for Flutter](https://github.com/deven98/MediumAppFlutter)
 
-[Flutter✕StackOverFlow App](https://github.com/iampawan/FlutterStackOverflowApp)
+[Flutter✕StackOverFlow App](https://github.com/iampawan/FlutterStackOverflowApp)：Django REST framework✕Flutterで開発されたスマホアプリ(StackOverflowクローンアプリ)
 
 [Tinder-clone](https://github.com/MarcinMiler/tinder-clone)：NestJS✕React(TypeScript)で開発されたTinderアプリ
 
 [E-learning-App](https://github.com/Hash-Studios/e-learning-app)：Flutterで開発されたオンライン授業アプリ
+
+[Movie-Ticket-Booking](https://github.com/hoc081098/Movie-Ticket-Booking)：NestJS✕Flutterで開発されたスマホアプリ。(映画チケットの予約アプリ)
