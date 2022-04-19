@@ -41,3 +41,4 @@
 * [Vue-Tailwind](https://www.vue-tailwind.com/)：VueアプリでTailwindを使うのに最適なパッケージ。クラス名が助長にならないのが最大の特徴。
 * [Meraki UI](https://merakiui.com/)：Tailwind CSSで開発されたUIコンポーネント集。
 * [UIdeck](https://uideck.com/)：Tailwind CSSで開発されたLP用のUIキット
+* [Tailwindcomponents](https://tailwindcomponents.com/)：Tailwindで開発されたcomponentリスト
