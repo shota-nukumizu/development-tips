@@ -2,8 +2,10 @@
 
 ## Awesome Language
 
-* [Awesome Idea](https://github.com/sindresorhus/awesome)
+* [Awesome](https://github.com/sindresorhus/awesome)
 * [Awesome Vite](https://github.com/vitejs/awesome-vite)
+* [Awesome Vuetify](https://github.com/vuetifyjs/awesome-vuetify)
+* [Awesome Next](https://github.com/unicodeveloper/awesome-nextjs)
 * [Awesome MaterialDesign](https://github.com/lightSky/Awesome-MaterialDesign)
 * [Awesome NestJS](https://github.com/nestjs/awesome-nestjs)
 * [Awesome Nuxt](https://github.com/Developerayo/awesome-nuxtjs)

@@ -129,6 +129,8 @@
 
 [Realworld](https://github.com/lujakob/nestjs-realworld-example-app)：NestJSで開発されたアプリ
 
+[shipit](https://github.com/18chetanpatel/shipit)：Vuetifyで開発されたeコマース
+
 ## GitHub
 
 * [Awesome - GitHub](https://github.com/sindresorhus/awesome)：世界中の開発アイデア、無料で学べるプログラミング学習サイトを一つにまとめたリポジトリ。Web開発者なら必見
