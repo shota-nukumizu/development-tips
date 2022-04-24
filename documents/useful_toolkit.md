@@ -42,6 +42,7 @@
 * [Tailblock](https://tailblocks.cc/)：Tailwindで開発されたUIキット。こちらはフレームワーク中心
 * [Vue-Tailwind](https://www.vue-tailwind.com/)：VueアプリでTailwindを使うのに最適なパッケージ。クラス名が助長にならないのが最大の特徴。
 * [Meraki UI](https://merakiui.com/)：Tailwind CSSで開発されたUIコンポーネント集。
+* [Nuxt UI](https://github.com/nuxt/ui)：Nuxt専用のUIキット
 * [UIdeck](https://uideck.com/)：Tailwind CSSで開発されたLP用のUIキット
 * [Tailwindcomponents](https://tailwindcomponents.com/)：Tailwindで開発されたcomponentリスト
 * [Tailwind Play](https://play.tailwindcss.com/)：オンライン上で自分の書いたTailwind CSSの挙動を確認できる
