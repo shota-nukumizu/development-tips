@@ -214,6 +214,8 @@
 
 [Movie-Ticket-Booking](https://github.com/hoc081098/Movie-Ticket-Booking)：NestJS✕Flutterで開発されたスマホアプリ。(映画チケットの予約アプリ)
 
+[metronome](https://github.com/manishmeganathan/metronome)：Flutterで開発されたタイマー
+
 # チュートリアル一覧
 
 * [redux-toolkit-tutorial](https://github.com/john-smilga/redux-toolkit-tutorial)：Reduxで開発されたeコマース(JavaScript専用)
