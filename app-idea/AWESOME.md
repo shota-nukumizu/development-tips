@@ -171,6 +171,7 @@
 * [FilledStacks](https://github.com/FilledStacks)：Flutterプログラマー
 * [doctorcode](https://github.com/doctorcode9)：Flutterアプリ開発者
 * [afgprogrammer](https://github.com/afgprogrammer)：Flutter開発者(一応フルスタック)
+* [Haruyasu Kaitori](https://github.com/haruyasu)：Python✕JavaScript(TypeScript)開発者
 
 # 個人開発で開発されたサービス
 
