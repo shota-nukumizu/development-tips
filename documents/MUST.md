@@ -2,6 +2,8 @@
 
 * [Django](https://github.com/django/django)
 * [Django REST Framework](https://github.com/encode/django-rest-framework)
+* [Fast API](https://github.com/tiangolo/fastapi)
+* [Flask](https://github.com/pallets/flask)
 * [TypeScript](https://github.com/microsoft/TypeScript)
 * [Nuxt](https://github.com/nuxt/framework)
 * [Nuxt TypeScript](https://github.com/nuxt/typescript)
