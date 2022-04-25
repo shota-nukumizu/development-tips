@@ -55,3 +55,171 @@ $ tsc --target ES5 --experimentalDecorators
 
 しかし、ブラウザでTypeScriptを動かせる[Playground](https://www.typescriptlang.org/play)ではデフォルトで設定されているのでそのまま動かすことができる。
 
+## Class Decorator：クラス・デコレータ
+
+```ts
+class BaseEntity {
+  readonly id: number;
+  readonly created: string;
+  constructor() {
+    this.id = Math.random();
+    this.created = new Date().toLocaleDateString();
+    this.updated = new Date().toLocaleDateString();
+  }
+}
+
+class Course extends BaseEntity {
+  constructor(public name: string) {
+    super();
+  }
+}
+class Subject extends BaseEntity {
+  constructor(public name: string) {
+    super();
+  }
+}
+class Student extends BaseEntity {
+  constructor(public name: string) {
+    super();
+  }
+}
+
+const mathCourse = new Course("English");
+console.log("id: " + mathCourse.id);
+console.log("created: " + mathCourse.created);
+
+const john = new Student("John Doe");
+// ...
+```
+
+この書き方だと、何度も`extends`~`super()`する必要があるのでプログラムが冗長になってしまう。ここでClass Decoratorの出番。
+
+先程のデータをClass Decoratorを使用した形に変換してみる。
+
+```ts
+// Decorator Factoriesを定義
+const BaseEntity = (ctr: Function) => {
+  ctr.prototype.id = Math.random();
+  ctr.prototype.created = new Date().toLocaleString("es-ES");
+};
+
+@BaseEntity
+class Course {
+  constructor(public name: string) {}
+}
+
+@BaseEntity
+class Subject {
+  constructor(public name: string) {}
+}
+
+@BaseEntity
+class Student {
+  constructor(public name: string) {}
+}
+
+// 型エラーが出るため、@ts-ignoreしている
+const mathCourse = new Course("English");
+// @ts-ignore
+console.log("id: " + mathCourse.id);
+// @ts-ignore
+console.log("created: " + mathCourse.created);
+
+const john = new Student("John Doe");
+// ...
+```
+
+| :memo:        |   <b>インスタンスなどでDecoratorで定義したクラス用プロパティを呼ぼうとすると、TypeScriptにDecoratorによってクラスが拡張されていることが伝わっていないのでエラーが発生する。</b>     |
+|---------------|:------------------------|
+
+## Method Decorator：メソッド・デコレータ
+
+メソッドの定義・修正・置換ができる。メソッド定義の直前で宣言する
+
+これのDecorator Factories定義は少し特殊。以下の３つの引数が必要。
+
+* `target`：クラスのコンストラクタのメソッド本体
+* `propertyKey`：デコレータを設置するメソッドの名前
+* `descriptor`：デコレータを設置するメソッドの[`propertyDescriptor`](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor)
+
+サンプルコードはコチラ
+
+```ts
+function checkCalculate(num: number) {
+  return (
+    _target: Object,
+    _propertyKey: string,
+    descriptor: PropertyDescriptor
+  ) => {
+    const addFunc = descriptor.value;
+    descriptor.value = function (...args: number[]) {
+      // apply() メソッドを使って、デコレータを設置する元メソッドを呼び出す
+      const result = addFunc.apply(this, args);
+      // 元メソッドの返却値が10未満のときは、掛け算を実行する
+      return result < 10 ? result * num : result;
+    };
+  };
+}
+```
+
+早速作成した関数`checkCalculate`を使う
+
+```ts
+class Calculate {
+  @checkCalculate(10)
+  sum(a: number, b: number): number {
+    return a + b;
+  }
+}
+
+// 50 -> 1 + 4 = 5を実行した後に、5 < 10だったため更に5 x 10 = 50を返す
+console.log(new Calculate().sum(1, 4));
+// 21 -> 20 + 1 = 21を実行した後に、21 > 10だったため、掛け算は実行せずそのまま21を返す
+console.log(new Calculate().sum(20, 1));
+```
+
+## Property Decorators：プロパティ・デコレータ
+
+プロパティ定義の検査・修正・置換ができる
+
+Decorator Factories定義では以下の２引数を使う。
+
+* `target`：デコレータを設置するプロパティがクラスの静的プロパティの場合、クラスの`constructor`メソッドを表現する。それ以外のプロパティでは、クラスのプロトタイプ
+* `memberName`：デコレータを設置するプロパティの名前
+
+```ts
+const notAllowlist = ["Jone Doe", "Peter Paker"];
+
+const allowNameOnly = (target: any, memberName: string) => {
+  let currentValue: string = target[memberName];
+
+  Object.defineProperty(target, memberName, {
+    set: (newValue: string) => {
+      if (notAllowlist.includes(newValue)) {
+        return;
+      }
+      currentValue = newValue;
+    },
+    get: () => currentValue,
+  });
+};
+
+class Person {
+  @allowNameOnly
+  name: string = "Jon";
+}
+
+const person = new Person();
+console.log(person.name); // Jon
+
+person.name = "Jone Doe";
+console.log(person.name); // Jon
+
+person.name = "Peter Paker";
+console.log(person.name); // Jon
+
+person.name = "Mary Jane";
+console.log(person.name); // Mary Jane
+```
+
+**まずはDecoratorをひたすら書いて慣れることが大事。**
