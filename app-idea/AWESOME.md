@@ -216,6 +216,12 @@
 
 [metronome](https://github.com/manishmeganathan/metronome)：Flutterで開発されたタイマー
 
+[Django-Vue Tutorial](https://github.com/stacklens/django-vue-tutorial)：DjangoとVueで開発されたブログアプリ(チュートリアル)
+
+[Flutter mahmudahsan](https://github.com/mahmudahsan/flutter)：Mediumで共有されているFlutter開発のtips
+
+[flutter-django-fullstack](https://github.com/bayardkalyan/flutter-django-fullstack)：FlutterとDjangoで開発されているフルスタックアプリ(Task Management)
+
 # チュートリアル一覧
 
 * [redux-toolkit-tutorial](https://github.com/john-smilga/redux-toolkit-tutorial)：Reduxで開発されたeコマース(JavaScript専用)
