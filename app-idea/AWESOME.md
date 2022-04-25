@@ -115,7 +115,7 @@
 
 [Building Nest.js Microservices is that simple! - Vue StoreFront Blog](https://blog.vuestorefront.io/nest-js-microservices-example/)
 
-[ブロックチェーンエンジニアの年収は？ブロックチェーンエンジニアの仕事や年収アップに必要なスキルを解説](https://freelance-start.com/articles/310)
+[Nuxt3の新しい機能](https://zenn.dev/azukiazusa/articles/nuxt3-new-features#usefetch%2Fuseasyncdata)：Zennで見つけたNuxtに関するすごい記事。Nuxt3でのAPI操作がうまくいった。
 
 [GeeksforGeeks](https://www.geeksforgeeks.org/)
 
