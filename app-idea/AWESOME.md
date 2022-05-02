@@ -131,6 +131,8 @@
 
 [shipit](https://github.com/18chetanpatel/shipit)：Vuetifyで開発されたeコマース
 
+[JWT Authentication — Django Rest Framework](https://medium.com/django-rest/django-rest-framework-jwt-authentication-94bee36f2af8)：DjangoでJWT認証を実装する際の基本が書かれたチュートリアルサイト
+
 ## GitHub
 
 * [Awesome - GitHub](https://github.com/sindresorhus/awesome)：世界中の開発アイデア、無料で学べるプログラミング学習サイトを一つにまとめたリポジトリ。Web開発者なら必見
