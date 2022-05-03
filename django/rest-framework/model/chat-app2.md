@@ -260,3 +260,5 @@ Ajax(Asynchronous JavaScript + XML)：**ページ遷移せずにページを読�
 [How to customize Django forms using Django widget tweaks - educative](https://www.educative.io/edpresso/how-to-customize-django-forms-using-django-widget-tweaks)
 
 [[Part-1] Creating a Simple Chat App with DjangoRestFramework - steemit](https://steemit.com/utopian-io/@ajmaln/part-1-creating-a-simple-chat-app-with-djangorestframework)
+
+[[Part 2] Simple Chat Application using DjangoRestFramework - steemit](https://steemit.com/utopian-io/@ajmaln/part-2-simple-chat-application-using-djangorestframework)
