@@ -71,6 +71,49 @@ INSTALLED_APPS = [
 ./manage.py migrate
 ```
 
+## `serializer`の作成
+
+`serializer`は、クエリセットやモデルインスタンスなどの複雑なデータをPythonのネイティブなデータ型に変換し、JSONやXMLなどのコンテンツタイプに簡単にレンダリングできるようにする。`serializer`はデシリアライゼーションも提供し、入力されたデータを最初に検証した後、parse(解析)されたデータを複雑な型に変換することができる。
+
+`ChatApp/chat/serializer.py`
+
+```py
+from django.contrib.auth.models import User
+from rest_framework import serializers
+from chat.models import Message
+# 
+# User Serializer
+class UserSerializer(serializers.ModelSerializer):
+    """For Serializing User"""
+    password = serializers.CharField(write_only=True)
+    class Meta:
+        model = User
+        fields = ['username', 'password']
+# 
+# Message Serializer
+class MessageSerializer(serializers.ModelSerializer):
+    """For Serializing Message"""
+    sender = serializers.SlugRelatedField(many=False, slug_field='username', queryset=User.objects.all())
+    receiver = serializers.SlugRelatedField(many=False, slug_field='username', queryset=User.objects.all())
+    class Meta:
+        model = Message
+        fields = ['sender', 'receiver', 'message', 'timestamp']
+```
+
+それでは、ひとつずつ見ていきましょう...。
+
+`serializer`クラスを利用するために、`rest_framework`から`serializer`をインポートしています。
+
+ModelSerializerクラスは、Modelのフィールドに対応するフィールドを持つSerializerクラスを自動的に作成できるショートカットを提供する。
+
+UserSerializerでは、GETリクエスト時に表示されるパスワードを取得しないように、`password`を`write_only`で指定しています。新しいユーザを作成する場合、POSTリクエストの時だけ必要です。
+
+Messageの送り手と受け手は`SlugRelatedField`としてシリアライズし、リレーションシップの対象を対象のフィールドで表現しています。フィールドはslug_fieldとして指定する。**また、`many`という引数を取り、リレーションが多対多であるかどうかを識別する。メッセージは単一の送信者と受信者のみを含むことができるため、`false`を指定。**`query`引数は、関連するオブジェクトを選択するためのオブジェクトのリストを取る。
+
+その後は、設計した`serializer`に対する`view`を記述していく。
+
+## `view`
+
 # 注
 
 `rendering`(レンダリング)：何らかの抽象的なデータ集合を基に、一定の処理や演算を行って画像や映像、音声などを生成すること
