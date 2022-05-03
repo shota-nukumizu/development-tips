@@ -25,6 +25,7 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Flutter Example Apps](https://github.com/iampawan/FlutterExampleApps)：Flutterで開発されたアプリたち
 * [flutterappworld](https://flutterappworld.com/)：Flutterで開発されたアプリの集団
 * [Chatty](https://github.com/lazlanrafar/Chatty)：Flutterで開発されたチャットアプリ
+* [ChatAppUI](https://github.com/codewithguru/ChatAppUI)：Flutterで開発されたチャットアプリその2
 
 # React Native App
 

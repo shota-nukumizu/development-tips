@@ -243,6 +243,8 @@
 
 [How to Build a Chat App UI With Flutter and Dart](https://www.freecodecamp.org/news/build-a-chat-app-ui-with-flutter/)：Flutterで簡単なチャットアプリを開発する方法(認証なし、レイアウト中心)
 
+[Building chat app with Flutter and Firebase - Medium](https://medium.com/flutter-community/building-a-chat-app-with-flutter-and-firebase-from-scratch-9eaa7f41782e)：Firebase✕Flutterでチャットアプリを開発する方法(Medium)
+
 # チュートリアル一覧
 
 * [redux-toolkit-tutorial](https://github.com/john-smilga/redux-toolkit-tutorial)：Reduxで開発されたeコマース(JavaScript専用)
