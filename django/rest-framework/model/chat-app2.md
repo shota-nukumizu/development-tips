@@ -1,4 +1,4 @@
-# Django REST Frameworkでチャットアプリ開発
+# Django REST Frameworkでチャットアプリ開発(バックエンド)
 
 # インストール
 
