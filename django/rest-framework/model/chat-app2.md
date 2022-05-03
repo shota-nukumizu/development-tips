@@ -516,7 +516,160 @@ $(function () {
 
 ## チャットを表示するページ
 
+### ユーザリストの作成
 
+`views.py`
+
+```py
+def chat_view(request):
+    """Render the template with required context variables"""
+    if not request.user.is_authenticated:
+        return redirect('index')
+    if request.method == "GET":
+        return render(request, 'chat/chat.html',
+                      {'users': User.objects.exclude(username=request.user.username)}) #Returning context for all users except the current logged-in user
+```
+
+`urls.py`
+
+```py
+urlpatterns = [
+    . . .
+    path('chat', views.chat_view, name='chats'),
+]
+```
+
+`templates/chat/chat.html`
+
+```html
+{% extends 'chat/index.html' %}
+{% block body %}
+<nav class="blue lighten-3">
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">Chat</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="">{{ request.user.username }}</a></li>
+          <li><a href="{% url 'logout' %}"><i class="material-icons">power_settings_new</i></a></li>
+      </ul>
+    </div>
+</nav>
+    <div class="section" style="height: 80vh">
+    <div class="row">
+        <div class="col s3">
+        <div class="card">
+            <div class="collection">
+                {% for user in users %}
+                <a href="{% url 'chat' request.user.id user.id %}" id="user{{ user.id }}" class="collection-item row">
+                    <img src="https://frontend-1.adjust.com/new-assets/images/site-images/interface/user.svg" class="col s4">
+                    <div class="col s8">
+                    <span class="title" style="font-weight: bolder">{{ user.username }}</span>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        </div>
+        <div class="col s9">
+            <div class="card">
+            <div id="board" class="section grey lighten-3" style="height: 68vh; padding: 5px; overflow-y: scroll">
+                {% block messages %}
+                {% endblock %}
+            </div>
+            <form id="chat-box" class="form-group {% block hide %}hide{% endblock %}" method="post">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col s11">
+                        <div class="input-field">
+                            <input id="id_message" name="message" type="text" placeholder="Type your message..">
+                        </div>
+                    </div>
+                    <div class="col s1" style="line-height: 80px">
+                        <button class="btn btn-floating blue lighten-2 waves-effect waves-light"><i class="material-icons">send</i></button>
+                    </div>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    {% load staticfiles %}
+    (html comment removed:  Including the scripts required )
+    <script src="{% static 'js/chat.js' %}"></script>
+    <script>
+        // For receiving, set global variables to be used by the 'receive' function
+        sender_id = "{{ receiver.id }}"; //Context variable for receiver
+        receiver_id = "{{ request.user.id }}"; //Context variable for current logged in user
+        //For sending
+        $(function () {
+            scrolltoend(); // Function to show the latest message, which is at the bottom of the message box, by scrolling to the end
+            //Handling the submit event to send the message.
+            $('#chat-box').on('submit', function (event) {
+                event.preventDefault();
+                var message = $('#id_message');
+                send('{{ request.user.username }}', '{{ receiver.username }}', message.val()); //Send function will be defined within 'chat.js'
+                message.val(''); //Clear content of the the input field after sending
+            })
+        })
+    </script>
+{% endblock %}
+```
+
+### 受信・送信画面の表示
+
+`views.py`
+
+```py
+#Takes arguments 'sender' and 'receiver' to identify the message list to return
+def message_view(request, sender, receiver): 
+    """Render the template with required context variables"""
+    if not request.user.is_authenticated:
+        return redirect('index')
+    if request.method == "GET":
+        return render(request, "chat/messages.html",
+                      {'users': User.objects.exclude(username=request.user.username), #List of users
+                       'receiver': User.objects.get(id=receiver), # Receiver context user object for using in template
+                       'messages': Message.objects.filter(sender_id=sender, receiver_id=receiver) |
+                                   Message.objects.filter(sender_id=receiver, receiver_id=sender)}) # Return context with message objects where users are either sender or receiver.
+```
+
+`urls.py`
+
+```py
+urlpatterns = [
+     ...
+     path('api/messages/<int:sender>/<int:receiver>', views.message_list, name='message-detail'),
+]
+```
+
+`templates/chat/messages.html`
+
+```html
+{% extends 'chat/chat.html' %}
+{% block hide %}{% endblock %}
+{% block messages %}
+    {% for message in messages %}
+    {% if message.sender == request.user %}
+<div class="card-panel right" style="width: 75%; position: relative">
+    <div style="position: absolute; top: 0; left:3px; font-weight: bolder" class="title">You</div>
+    {{ message }}
+</div>
+    {% else %}
+<div class="card-panel left blue lighten-5" style="width: 75%; position: relative">
+    <div style="position: absolute; top: 0; left:3px; font-weight: bolder" class="title">{{ message.sender }}</div>
+    {{ message }}
+</div>
+    {% endif %}
+    {% endfor %}
+<script>
+$(function () {
+    //Highlighting the user that is currently selected for chatting in the users list
+    $('#user{{ receiver.id }}').addClass('active');
+    //Call receive function at an interval of 1 second to check for new messages in the database
+    setInterval(receive,1000)
+})
+</script>
+{% endblock %}
+```
 
 # 注
 
