@@ -26,6 +26,10 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [flutterappworld](https://flutterappworld.com/)：Flutterで開発されたアプリの集団
 * [Chatty](https://github.com/lazlanrafar/Chatty)：Flutterで開発されたチャットアプリ
 * [ChatAppUI](https://github.com/codewithguru/ChatAppUI)：Flutterで開発されたチャットアプリその2
+* [FlutterWhatsAppClone](https://github.com/iampawan/FlutterWhatsAppClone)：Flutterで開発されたWhatsAppクローン
+* [Flutter Ecommerce App](https://github.com/TheAlphamerc/flutter_ecommerce_app)：Flutterで開発されたeコマースアプリ
+* [Flutter Ecommerce UI Kit](https://github.com/Furqankhanzada/flutter_eCommerce_ui_kit)：Flutter製のeコマースアプリ開発に必要なUIキット
+* [Flutter Elearning UI](https://github.com/Hash-Studios/e-learning-app)：Flutter製のeラーニングシステム
 
 # React Native App
 
