@@ -9,7 +9,6 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Flutter Doc JP](https://flutter.ctrnost.com/)：Flutterの開発アイデアやテクニックを日本語にまとめたもの
 * [TheFlutterWay](https://www.youtube.com/c/TheFlutterWay)：FlutterのUIデザインを提供してくれるチャンネル。
 * [diegoveloper](https://www.youtube.com/c/diegoveloper/featured)：Flutterのアプリ開発メイン
-* [dbestech](https://www.youtube.com/c/dbestech)：FlutterやReact Nativeを使ったアプリ開発
 * [React Native VS Flutter](https://www.youtube.com/watch?v=X8ipUgXH6jw&t=6s&pp=ugMICgJqYRABGAE%3D)：React NativeとFlutterの徹底比較
 * [Fireship](https://www.youtube.com/c/Fireship)：ReactとFlutterのチュートリアル説明
 * [Flutter Chatapp using Nodejs & SocketIO](https://www.youtube.com/watch?v=uydBHliNXwE&list=PLtIU0BH0pkKovuEaNsrGE_Xd5Tz3m1zeC)：Flutterでチャットアプリ開発(バックエンドにNodeとSocketIO)
@@ -26,6 +25,7 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Dating-APP](https://github.com/ngocaiyeu/dating-app-client)：Flutterで開発されたマッチングアプリのサンプル
 * [Flutter Example Apps](https://github.com/iampawan/FlutterExampleApps)：Flutterで開発されたアプリたち
 * [flutterappworld](https://flutterappworld.com/)：Flutterで開発されたアプリの集団
+* [Chatty](https://github.com/lazlanrafar/Chatty)：Flutterで開発されたチャットアプリ
 
 # React Native App
 

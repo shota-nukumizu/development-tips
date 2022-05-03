@@ -239,6 +239,10 @@
 
 [parking-app](https://github.com/adamstyrc/parking-app)：Flutterで開発された駐車場予約アプリ
 
+[How to build a chat application in Flutter with Firebase - LogRocket](https://blog.logrocket.com/how-to-build-chat-application-flutter-firebase/)：Flutterで簡単なチャットアプリを開発する方法(認証あり)
+
+[How to Build a Chat App UI With Flutter and Dart](https://www.freecodecamp.org/news/build-a-chat-app-ui-with-flutter/)：Flutterで簡単なチャットアプリを開発する方法(認証なし、レイアウト中心)
+
 # チュートリアル一覧
 
 * [redux-toolkit-tutorial](https://github.com/john-smilga/redux-toolkit-tutorial)：Reduxで開発されたeコマース(JavaScript専用)
