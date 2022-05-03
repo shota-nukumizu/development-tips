@@ -23,6 +23,8 @@ Flutterはコーディングが簡単で、様々なUIを手軽に実装でき�
 
 # 基本的なUIの実装
 
+データを一列に表示するだけのサンプルアプリ
+
 ```dart
 import 'package:flutter/material.dart'; 
 void main() => runApp(MyApp()); 
@@ -134,6 +136,18 @@ class ProductBox extends StatelessWidget {
    }
 }
 ```
+
+# Flutterの学習方法
+
+* [GitHub](https://github.com/flutter/flutter)
+* [docs](https://docs.flutter.dev/)
+* [Flutter Samples](https://flutter.github.io/samples/#)
+* [Flutter Gallary](https://gallery.flutter.dev/)
+* [freeCodeCamp](https://www.freecodecamp.org/)
+
+GitHub-Flutterの公式リポジトリやIssues、Flutterエンジンのリポジトリを閲覧することで開発時に起こるフレームワークが原因の不具合のヒントを得られる。
+
+Flutter開発では、主にこれら５つのドキュメントを中心に進める。
 
 # 参考サイト
 
