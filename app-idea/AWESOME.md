@@ -193,6 +193,8 @@
 
 [Taskly](https://github.com/JobinBiju/Taskly)：Flutterで開発されたタスク管理アプリ。
 
+[FlutterSocialAppUIKit - GitHub](https://github.com/JideGuru/FlutterSocialAppUIKit)：Flutterで開発されたSNSアプリのサンプル
+
 [Social UI kit for Flutter](https://github.com/sopheamen007/app.mobile.social-ui-kit-app-ui)：Flutterで開発されたソーシャルメディアのアプリ
 
 [Social Network UI Made in Flutter](https://github.com/stevie1mat/Social-Network-UI-Made-In-Flutter)：Flutterで開発されたソーシャルアプリ
