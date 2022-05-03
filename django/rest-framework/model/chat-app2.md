@@ -212,6 +212,312 @@ admin.site.register(Message)
 
 あとはAPIをテストする際にcurlコマンドを入力する
 
+# フロントエンド構築
+
+【主な手順】
+
+* フロントエンドの`view`を作成する
+* `view`のテンプレートを設計する
+* Django REST Frameworkを通じて、jQueryのAjax通信でリアルタイムにデータベースにアクセスする
+
+**フロントエンドを構築する前に、HTMLテンプレート用のフォルダとCSSやJSなどの静的ファイル用のフォルダを用意する必要がある。**
+
+`settings.py`
+
+```py
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR,  'templates')], /*We added the templates folder in our project's base directory*/
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+```
+
+ディレクトリ構造は以下の通り
+
+```
+ChatApp
+├── ChatApp
+├── chat
+├── db.sqlite3
+├── manage.py
+├── static
+└── templates
+```
+
+MaterializeCSSファイルをダウンロード
+
+次のようなディレクトリになるように、`static`フォルダにコンテンツを展開する
+
+```
+static
+├── css
+│   ├── materialize.css
+│   ├── materialize.min.css
+│   └── style.css  //For custom styles (Not a part of MaterializeCSS)
+├── fonts
+│   └── roboto
+└── js
+    ├── chat.js  //For custom scripts (Not a part of MaterializeCSS)
+    ├── materialize.js
+    └── materialize.min.js
+```
+
+フロントエンドを構築する上で必要なことはざっくり以下の３つ。
+
+* ユーザ認証と登録
+* チャットを表示するページ
+
+## ユーザ認証と登録
+
+`chat/views.py`
+
+以下のモジュールをインポートする
+
+```py
+from django.contrib.auth import authenticate, login #Django's inbuilt authentication methods
+from django.contrib.auth.models import User #Inbuilt User model
+from django.http.response import JsonResponse, HttpResponse
+from django.shortcuts import render, redirect
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.parsers import JSONParser
+from chat.models import Message
+from chat.serializers import MessageSerializer, UserSerializer
+```
+
+ログインページを実装。
+
+```py
+# chat/views.py
+def index(request):
+    if request.user.is_authenticated: #If the user is authenticated then redirect to the chat console
+        return redirect('chats')
+    if request.method == 'GET':
+        return render(request, 'chat/index.html', {})
+    if request.method == "POST": #Authentication of user
+        username, password = request.POST['username'], request.POST['password'] #Retrieving username and password from the POST data.
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            login(request, user)
+        else:
+            return HttpResponse('{"error": "User does not exist"}')
+        return redirect('chats')
+```
+
+ルーティングに新規で上記の`view`を追加(`chat/urls.py`)
+
+```py
+ChatApp/chat/urls.py
+
+urlpatterns = [
+     ...    
+     path('', views.index, name='index'),
+]
+```
+
+基本となるテンプレートをここで表示する(`templates/chat/index.html`)
+
+```html
+{% load staticfiles %} (html comment removed: Django template tag for loading static files)
+  <!DOCTYPE html>
+  <html>
+    <head>
+      (html comment removed: Import Google Icon Font)
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        (html comment removed: Import materialize.css)
+        <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"  media="screen,projection"/>
+      (html comment removed: Let browser know website is optimized for mobile)
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      (html comment removed: Import jQuery before materialize.js)
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'js/chat.js' %}"></script>
+    </head>
+    <body>
+    {% block body %}
+        <div class="section blue lighten-3">
+            <div class="container white-text center-align text">
+            <h2>Chat</h2>
+            <p>A simple Chat App using DjangoRestFramework</p>
+            <div class="chip">
+                <img src="https://opbeat.com/docs/static/images/stacks/logo_django_alt.svg" class="white">
+                Django
+            </div>
+            <div class="chip">
+                <img src="http://materializecss.com/res/materialize.svg" class="white">
+                MaterializeCSS
+            </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+            <div class="col s12 m8 l6 offset-m2 offset-l3">
+                <div class="section center-block">
+                <div>
+                    {% block form %}
+                    <h3>
+                    Login
+                    </h3>
+                    <form id="login-form" class="form-group" method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input name="username" id="id_username" type="text">
+                                <label for="id_username">Username</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input name="password" id="id_password" type="password">
+                                <label for="id_password">Password</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s8">
+                                <a href="{% url 'register' %}">Register</a>
+                            </div>
+                            <div class="col s4">
+                            <div class="right">
+                                <button class="btn blue waves-effect waves-light pull-s12">Login</button>
+                            </div>
+                            </div>
+                        </div>
+                    </form>
+                    {% endblock %}
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        {% endblock %}
+    </body>
+  </html>
+```
+
+更に追加で登録`view`を作成
+
+```py
+# Simply render the template
+def register_view(request):
+    if request.user.is_authenticated:
+        return redirect('index')
+    return render(request, 'chat/register.html', {})
+```
+
+ルーティング
+
+```py
+urlpatterns = [
+    ...
+    path('register', views.register_view, name='register'),
+]
+```
+
+HTMLに反映させる
+
+`templates/chat/register.html`
+
+```html
+{% extends 'chat/index.html' %} (html comment removed:  Extending index.html )
+{% block form %} (html comment removed:  Overriding block form )
+    <h3>
+    Register
+    </h3>
+    <form id="register-form" class="form-group">
+        {% csrf_token %}
+        <div class="row">
+            <div class="input-field col s12">
+                <input name="username" id="id_username" type="text" class="validate invalid">
+                <label for="id_username" data-error="Username already taken">Username</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input name="password" id="id_password" type="password">
+                <label for="id_password">Password</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input name="password2" id="id_password2" type="password">
+                <label for="id_password2">Repeat Password</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+            <div class="right">
+                <button class="btn blue waves-effect waves-light pull-s12">Register</button>
+            </div>
+            </div>
+        </div>
+    </form>
+    <script>
+    //Script for validating user registration.
+    $(function () {
+        $('#register-form').on('submit', function (event) {
+            event.preventDefault(); //Prevent the default behavior on submit.
+            var username = $('#id_username').val();
+            var password;
+            if(username !== '') //Check if username in not blank
+            {
+                password = $('#id_password').val();
+                if(password !== '' && password === $('#id_password2').val()) //Check if password is not blank and matches with the confirmation.
+                {
+                    register(username, password); //Calling register function, which we will define in 'chat.js'
+                }
+                else{
+                    alert("The passwords doesn't match!");
+                }
+            }
+            else
+                alert("Please enter a valid username!");
+        })
+    })
+    </script>
+{% endblock %}
+```
+
+▼JS部分。**これがないとログインページでの誤った入力に対する処理を表示できない。地味だけど意外と重要。**
+
+```js
+$(function () {
+    $('#register-form').on('submit', function (event) {
+        event.preventDefault(); //Prevent the default behavior on submit.
+        var username = $('#id_username').val();
+        var password;
+        if(username !== '') //Check if username in not blank
+        {
+            password = $('#id_password').val();
+            if(password !== '' && password === $('#id_password2').val()) //Check if password is not blank and matches with the confirmation.
+            {
+                register(username, password); //Calling register function, which we will define in 'chat.js'
+            }
+            else{
+                alert("The passwords doesn't match!");
+            }
+        }
+        else
+            alert("Please enter a valid username!");
+    })
+})
+```
+
+## チャットを表示するページ
+
+
+
 # 注
 
 `rendering`(レンダリング)：何らかの抽象的なデータ集合を基に、一定の処理や演算を行って画像や映像、音声などを生成すること
