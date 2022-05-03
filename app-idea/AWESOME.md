@@ -195,6 +195,12 @@
 
 [FlutterSocialAppUIKit - GitHub](https://github.com/JideGuru/FlutterSocialAppUIKit)：Flutterで開発されたSNSアプリのサンプル
 
+[Fwitter](https://github.com/TheAlphamerc/flutter_twitter_clone)：Flutterで開発されたTwitterのクローンアプリ。
+
+[Flutter Notes](https://github.com/FerMod/flutter_notes)：Flutterで開発された簡易版メモ。
+
+[Tasky](https://github.com/iamEtornam/Tasky-Mobile-App)：Flutterで開発されたタスク管理アプリ。(バックエンドはFirebaseとPostgre)
+
 [Social UI kit for Flutter](https://github.com/sopheamen007/app.mobile.social-ui-kit-app-ui)：Flutterで開発されたソーシャルメディアのアプリ
 
 [Social Network UI Made in Flutter](https://github.com/stevie1mat/Social-Network-UI-Made-In-Flutter)：Flutterで開発されたソーシャルアプリ

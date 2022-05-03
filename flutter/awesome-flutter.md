@@ -25,6 +25,7 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Flutter-Social](https://github.com/emrade/flutter-social)：Flutterで開発されたSNSアプリ
 * [Dating-APP](https://github.com/ngocaiyeu/dating-app-client)：Flutterで開発されたマッチングアプリのサンプル
 * [Flutter Example Apps](https://github.com/iampawan/FlutterExampleApps)：Flutterで開発されたアプリたち
+* [flutterappworld](https://flutterappworld.com/)：Flutterで開発されたアプリの集団
 
 # React Native App
 
