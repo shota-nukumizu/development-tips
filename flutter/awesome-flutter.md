@@ -11,7 +11,6 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [diegoveloper](https://www.youtube.com/c/diegoveloper/featured)：Flutterのアプリ開発メイン
 * [React Native VS Flutter](https://www.youtube.com/watch?v=X8ipUgXH6jw&t=6s&pp=ugMICgJqYRABGAE%3D)：React NativeとFlutterの徹底比較
 * [Fireship](https://www.youtube.com/c/Fireship)：ReactとFlutterのチュートリアル説明
-* [Flutter Chatapp using Nodejs & SocketIO](https://www.youtube.com/watch?v=uydBHliNXwE&list=PLtIU0BH0pkKovuEaNsrGE_Xd5Tz3m1zeC)：Flutterでチャットアプリ開発(バックエンドにNodeとSocketIO)
 * [Flutter UI](https://www.youtube.com/playlist?list=PLgGjX33Qsw-FIWxoI2IJf7zsHyxzuFfK5)：Flutterで開発されたUIキット。作り方が動画で簡単に示されている
 * [Flutter Tutorials for Beginners](https://www.youtube.com/watch?v=GQJovou6zuE&list=PL3nPgdhXQtHfC53Kl7oWsoq7TSX3e64Y1)：Flutterのチュートリアル集
 * [Taskly](https://github.com/JobinBiju/Taskly)：Flutterで開発されたタスク管理アプリ
