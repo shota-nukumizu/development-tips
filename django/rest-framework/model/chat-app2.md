@@ -114,6 +114,104 @@ Messageの送り手と受け手は`SlugRelatedField`としてシリアライズ�
 
 ## `view`
 
+### UserView
+
+`Chatapp/chat/views.py`
+
+```py
+from django.contrib.auth.models import User                                # Django Build in User Model
+from django.http.response import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from rest_framework.parsers import JSONParser
+from chat.models import Message                                                   # Our Message model
+from chat.serializers import MessageSerializer, UserSerializer # Our Serializer Classes
+# Users View
+@csrf_exempt                                                              # Decorator to make the view csrf excempt.
+def user_list(request, pk=None):
+    """
+    List all required messages, or create a new message.
+    """
+    if request.method == 'GET':
+        if pk:                                                                      # If PrimaryKey (id) of the user is specified in the url
+            users = User.objects.filter(id=pk)              # Select only that particular user
+        else:
+            users = User.objects.all()                             # Else get all user list
+        serializer = UserSerializer(users, many=True, context={'request': request}) 
+        return JsonResponse(serializer.data, safe=False)               # Return serialized data
+    elif request.method == 'POST':
+        data = JSONParser().parse(request)           # On POST, parse the request object to obtain the data in json
+        serializer = UserSerializer(data=data)        # Seraialize the data
+        if serializer.is_valid():
+            serializer.save()                                            # Save it if valid
+            return JsonResponse(serializer.data, status=201)     # Return back the data on success
+        return JsonResponse(serializer.errors, status=400)     # Return back the errors  if not valid
+```
+
+### MessageView
+
+```py
+@csrf_exempt
+def message_list(request, sender=None, receiver=None):
+    """
+    List all required messages, or create a new message.
+    """
+    if request.method == 'GET':
+        messages = Message.objects.filter(sender_id=sender, receiver_id=receiver)
+        serializer = MessageSerializer(messages, many=True, context={'request': request})
+        return JsonResponse(serializer.data, safe=False)
+    elif request.method == 'POST':
+        data = JSONParser().parse(request)
+        serializer = MessageSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data, status=201)
+        return JsonResponse(serializer.errors, status=400)
+```
+
+上記のビューはUserビューとほとんど同じですが、URLパラメータとしてsenderとreceiverを必要とします。送信者と受信者は、メッセージに関連付けられたユーザーのIDを期待する。
+
+`ChatApp/urls.py`を作成する
+
+```py
+urlpatterns = [
+    ...
+    path('', include('chat.urls')), # これがないと機能しない
+]
+```
+
+`chat/urls.py`を新規作成
+
+```py
+from django.urls import path
+from . import views
+urlpatterns = [
+    # URL form : "/api/messages/1/2"
+    path('api/messages/<int:sender>/<int:receiver>', views.message_list, name='message-detail'),  # For GET request.
+    # URL form : "/api/messages/"
+    path('api/messages/', views.message_list, name='message-list'),   # For POST
+    # URL form "/api/users/1"
+    path('api/users/<int:pk>', views.user_list, name='user-detail'),      # GET request for user with id
+    path('api/users/', views.user_list, name='user-list'),    # POST for new user and GET for all users list
+]
+```
+
+以下のコマンドで管理者を作成する。
+
+```
+./manage.py createsuperuser
+```
+
+管理サイトでデータを編集できるように、`chat/admin.py`を編集する
+
+```py
+from django.contrib import admin
+from chat.models import Message
+
+admin.site.register(Message)
+```
+
+あとはAPIをテストする際にcurlコマンドを入力する
+
 # 注
 
 `rendering`(レンダリング)：何らかの抽象的なデータ集合を基に、一定の処理や演算を行って画像や映像、音声などを生成すること
