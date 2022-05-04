@@ -245,6 +245,14 @@
 
 [Building chat app with Flutter and Firebase - Medium](https://medium.com/flutter-community/building-a-chat-app-with-flutter-and-firebase-from-scratch-9eaa7f41782e)：Firebase✕Flutterでチャットアプリを開発する方法(Medium)
 
+[The Best 3 API Testing Tools - Medium](https://jinlow.medium.com/the-best-3-api-testing-tools-e643305790c9)
+
+[Register, Login, and Logout users in Django Rest Framework](https://medium.com/geekculture/register-login-and-logout-users-in-django-rest-framework-51486390c29)
+
+[Custom Permission Classes in Django Rest Framework](https://prithoo11335.medium.com/custom-permission-classes-in-django-restframework-6dc1d26bba33)
+
+[Creating a Django API using Django Rest Framework APIView](https://medium.com/the-andela-way/creating-a-django-api-using-django-rest-framework-apiview-b365dca53c1d)
+
 # チュートリアル一覧
 
 * [redux-toolkit-tutorial](https://github.com/john-smilga/redux-toolkit-tutorial)：Reduxで開発されたeコマース(JavaScript専用)
