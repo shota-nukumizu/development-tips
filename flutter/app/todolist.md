@@ -296,3 +296,229 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+
+# [TaskDiary-Flutter](https://github.com/SurajLad/TaskDiary-Flutter)
+
+## ディレクトリ
+
+```
+C:.
+│  .gitignore
+│  .metadata
+│  pubspec.lock
+│  pubspec.yaml
+│  README.md
+│
+├─android
+│  │  .gitignore
+│  │  build.gradle
+│  │  gradle.properties
+│  │  settings.gradle
+│  │
+│  ├─app
+│  │  │  build.gradle
+│  │  │
+│  │  └─src
+│  │      ├─debug
+│  │      │      AndroidManifest.xml
+│  │      │
+│  │      ├─main
+│  │      │  │  AndroidManifest.xml
+│  │      │  │
+│  │      │  ├─kotlin
+│  │      │  │  └─com
+│  │      │  │      └─example
+│  │      │  │          └─xno_taskapp
+│  │      │  │                  MainActivity.kt
+│  │      │  │
+│  │      │  └─res
+│  │      │      ├─drawable
+│  │      │      │      launch_background.xml
+│  │      │      │
+│  │      │      ├─mipmap-hdpi
+│  │      │      │      ic_launcher.png
+│  │      │      │
+│  │      │      ├─mipmap-mdpi
+│  │      │      │      ic_launcher.png
+│  │      │      │
+│  │      │      ├─mipmap-xhdpi
+│  │      │      │      ic_launcher.png
+│  │      │      │
+│  │      │      ├─mipmap-xxhdpi
+│  │      │      │      ic_launcher.png
+│  │      │      │
+│  │      │      ├─mipmap-xxxhdpi
+│  │      │      │      ic_launcher.png
+│  │      │      │
+│  │      │      ├─values
+│  │      │      │      styles.xml
+│  │      │      │
+│  │      │      └─values-night
+│  │      │              styles.xml
+│  │      │
+│  │      └─profile
+│  │              AndroidManifest.xml
+│  │
+│  └─gradle
+│      └─wrapper
+│              gradle-wrapper.properties
+│
+├─assets
+│  │  no_task_vector.png
+│  │  profile_vector.png
+│  │  task_splash.png
+│  │
+│  ├─avatars
+│  │      female_01.png
+│  │      female_02.png
+│  │      female_03.png
+│  │      male_01.png
+│  │      male_02.png
+│  │      male_03.png
+│  │      male_04.png
+│  │
+│  └─font
+│          Poppins-Regular.ttf
+│
+├─ios
+│  │  .gitignore
+│  │
+│  ├─Flutter
+│  │      AppFrameworkInfo.plist
+│  │      Debug.xcconfig
+│  │      Release.xcconfig
+│  │
+│  ├─Runner
+│  │  │  AppDelegate.swift
+│  │  │  Info.plist
+│  │  │  Runner-Bridging-Header.h
+│  │  │
+│  │  ├─Assets.xcassets
+│  │  │  ├─AppIcon.appiconset
+│  │  │  │      Contents.json
+│  │  │  │      Icon-App-1024x1024@1x.png
+│  │  │  │      Icon-App-20x20@1x.png
+│  │  │  │      Icon-App-20x20@2x.png
+│  │  │  │      Icon-App-20x20@3x.png
+│  │  │  │      Icon-App-29x29@1x.png
+│  │  │  │      Icon-App-29x29@2x.png
+│  │  │  │      Icon-App-29x29@3x.png
+│  │  │  │      Icon-App-40x40@1x.png
+│  │  │  │      Icon-App-40x40@2x.png
+│  │  │  │      Icon-App-40x40@3x.png
+│  │  │  │      Icon-App-60x60@2x.png
+│  │  │  │      Icon-App-60x60@3x.png
+│  │  │  │      Icon-App-76x76@1x.png
+│  │  │  │      Icon-App-76x76@2x.png
+│  │  │  │      Icon-App-83.5x83.5@2x.png
+│  │  │  │
+│  │  │  └─LaunchImage.imageset
+│  │  │          Contents.json
+│  │  │          LaunchImage.png
+│  │  │          LaunchImage@2x.png
+│  │  │          LaunchImage@3x.png
+│  │  │          README.md
+│  │  │
+│  │  └─Base.lproj
+│  │          LaunchScreen.storyboard
+│  │          Main.storyboard
+│  │
+│  ├─Runner.xcodeproj
+│  │  │  project.pbxproj
+│  │  │
+│  │  ├─project.xcworkspace
+│  │  │  │  contents.xcworkspacedata
+│  │  │  │
+│  │  │  └─xcshareddata
+│  │  │          IDEWorkspaceChecks.plist
+│  │  │          WorkspaceSettings.xcsettings
+│  │  │
+│  │  └─xcshareddata
+│  │      └─xcschemes
+│  │              Runner.xcscheme
+│  │
+│  └─Runner.xcworkspace
+│      │  contents.xcworkspacedata
+│      │
+│      └─xcshareddata
+│              IDEWorkspaceChecks.plist
+│              WorkspaceSettings.xcsettings
+│
+├─lib
+│  │  main.dart
+│  │
+│  ├─helpers
+│  │      app_constants.dart
+│  │      layout_helper.dart
+│  │      text_styles.dart
+│  │
+│  ├─model
+│  │  │  task_controller.dart
+│  │  │
+│  │  └─hive
+│  │          label.dart
+│  │          label.g.dart
+│  │          task.dart
+│  │          task.g.dart
+│  │          user.dart
+│  │          user.g.dart
+│  │
+│  └─ui
+│      │  add_task.dart
+│      │  home_page.dart
+│      │  splash_page.dart
+│      │
+│      └─widgets
+│              calender_view.dart
+│              custom_calender.dart
+│              custom_textfield.dart
+│              label_widget.dart
+│              material_button.dart
+│              ui_helpers.dart
+│
+├─Screenshots
+│      app.apk
+│      screenshot_1.png
+│      screenshot_2.png
+│      screenshot_3.png
+│      screenshot_4.png
+│
+└─test
+        widget_test.dart
+```
+
+## `lib`フォルダの中身
+
+```
+├─lib
+│  │  main.dart
+│  │
+│  ├─helpers
+│  │      app_constants.dart
+│  │      layout_helper.dart
+│  │      text_styles.dart
+│  │
+│  ├─model
+│  │  │  task_controller.dart
+│  │  │
+│  │  └─hive
+│  │          label.dart
+│  │          label.g.dart
+│  │          task.dart
+│  │          task.g.dart
+│  │          user.dart
+│  │          user.g.dart
+│  │
+│  └─ui
+│      │  add_task.dart
+│      │  home_page.dart
+│      │  splash_page.dart
+│      │
+│      └─widgets
+│              calender_view.dart
+│              custom_calender.dart
+│              custom_textfield.dart
+│              label_widget.dart
+│              material_button.dart
+│              ui_helpers.dart
+```
