@@ -15,6 +15,18 @@ def current_datetime(request):
     return HttpResponse(html)
 ```
 
+**非同期通信を行う際には、予約語`def`の前に`async`を置く。**
+
+```py
+import datetime
+from django.http import HttpResponse
+
+async def current_datetime(request):
+    now = datetime.datetime.now()
+    html = '<html><body>It is now %s.</body></html>' % now
+    return HttpResponse(html)
+```
+
 # 参考
 
 [Writing views - Django Document](https://docs.djangoproject.com/en/4.0/topics/http/views/)
