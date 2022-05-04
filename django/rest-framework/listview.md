@@ -103,3 +103,9 @@ class BookRetrieveAPIView(views.APIView):
 ```
 
 上記のプログラムにおけるハンドラメソッドの引数である`pk`は、`URLconf`において`/books/<pk>/`のようなパスコンパータを含めたURLパターンを登録しておくことでURLディスパッチャからこのような引数付きで呼び出すことができるようになる。
+
+# 参考
+
+[現場で使える Django REST Framework の教科書 （Django の教科書シリーズ）](https://www.amazon.co.jp/%E7%8F%BE%E5%A0%B4%E3%81%A7%E4%BD%BF%E3%81%88%E3%82%8B-Django-Framework-%EF%BC%88Django-%E3%81%AE%E6%95%99%E7%A7%91%E6%9B%B8%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%EF%BC%89-ebook/dp/B07XWL8FPM/ref=sr_1_1?keywords=django+rest+framework&qid=1651700947&s=digital-text&sprefix=django+res%2Cdigital-text%2C291&sr=1-1)
+
+[Creating a Django API using Django Rest Framework APIView](https://medium.com/the-andela-way/creating-a-django-api-using-django-rest-framework-apiview-b365dca53c1d)
