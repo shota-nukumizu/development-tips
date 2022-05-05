@@ -2,6 +2,8 @@
 
 * [NestJS tutorial in 8 hours](https://www.youtube.com/watch?v=fuskkKOiU5E)
 * [Feed Next](https://github.com/ozkanonur/feednext)：Social Media用のアプリケーション
+* [NestJS Idea API](https://github.com/kelvin-mai/nest-ideas-api)
+* [NestJS Realworld Example App](https://github.com/lujakob/nestjs-realworld-example-app)
 
 # awesome-article
 
