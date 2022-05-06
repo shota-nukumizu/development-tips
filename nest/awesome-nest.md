@@ -9,3 +9,7 @@
 
 * [Making authentication logic for Flutter + Nestjs](https://djkooks.github.io/authentication-with-flutter-nestjs)
 * [NestJSでJWTを使った認証を実装する](https://zenn.dev/uttk/articles/9095a28be1bf5d)
+* [NestJS: Authentication With JWT And Postgres](https://betterprogramming.pub/nestjs-authentication-with-jwt-and-postgres-50de6341f490)
+* [How to implement refresh tokens JWT in NestJS](https://webera.blog/how-to-implement-refresh-tokens-jwt-in-nestjs-b8093c5642a9)
+* [Hornbill - GitHub](https://github.com/NikhilCodes/Hornbill)：NestJSとFlutterで開発されたチャットアプリ
+* [immich - GitHub](https://github.com/alextran1502/immich)：NestJSとFlutterで開発されたメディア共有サービス
