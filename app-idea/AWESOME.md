@@ -178,6 +178,7 @@
 * [afgprogrammer](https://github.com/afgprogrammer)：Flutter開発者(一応フルスタック)
 * [Haruyasu Kaitori](https://github.com/haruyasu)：Python✕JavaScript(TypeScript)開発者
 * [scalablescripts](https://github.com/scalablescripts)：Pythonを使ったマイクロサービスを開発している
+* [sopheamen007](https://github.com/sopheamen007)：FlutterのUI開発の動画をYouTubeにアップしている
 
 # 個人開発で開発されたサービス
 
