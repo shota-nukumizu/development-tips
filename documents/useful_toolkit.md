@@ -53,3 +53,4 @@
 * [Cloud: Mongodb](https://cloud.mongodb.com/)：MongoDBの操作をブラウザ上で行える。
 * [materializeCSS](https://materializecss.com/)：CSSでMaterial Designを整えるためのツール
 * [swagger](https://github.com/swagger-api/swagger-ui)：APIテスト用の強力なツール
+* [devdocs](https://devdocs.io/)：HTMLやCSS、JavaScriptの基礎知識を一つにまとめたキュレーションサイト
