@@ -13,6 +13,7 @@
 * [Awesome Flask](https://github.com/humiaozuzu/awesome-flask)
 * [Awesome FastAPI](https://github.com/mjhea0/awesome-fastapi)
 * [Awesome Flutter](https://github.com/Solido/awesome-flutter)
+* [Awesome Flutter Desktop](https://github.com/leanflutter/awesome-flutter-desktop)
 * [Awesome React Native](https://github.com/jondot/awesome-react-native)
 * [Awesome TypeScript](https://github.com/dzharii/awesome-typescript)
 
