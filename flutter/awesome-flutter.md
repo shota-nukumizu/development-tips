@@ -30,6 +30,7 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Flutter Ecommerce App](https://github.com/TheAlphamerc/flutter_ecommerce_app)：Flutterで開発されたeコマースアプリ
 * [Flutter Ecommerce UI Kit](https://github.com/Furqankhanzada/flutter_eCommerce_ui_kit)：Flutter製のeコマースアプリ開発に必要なUIキット
 * [Flutter Elearning UI](https://github.com/Hash-Studios/e-learning-app)：Flutter製のeラーニングシステム
+* [Trace](https://github.com/trentpiercy/trace)：Flutter製の仮想通貨の相場を確認できるアプリ。
 
 # React Native App
 
