@@ -14,3 +14,7 @@
 * [Hornbill - GitHub](https://github.com/NikhilCodes/Hornbill)：NestJSとFlutterで開発されたチャットアプリ
 * [immich - GitHub](https://github.com/alextran1502/immich)：NestJSとFlutterで開発されたメディア共有サービス
 * [Nest Ionic Examples](https://nest-ionic-examples.github.io/)：NestJSでの開発を行う際に必要な基礎知識のチュートリアル
+
+# awesome-package
+
+* [Nestia - GitHub](https://github.com/samchon/nestia)：NestJSのSDKやドキュメントを自動で生成するパッケージ。めちゃくちゃ完成度が高い。
