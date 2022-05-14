@@ -31,7 +31,8 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Flutter Ecommerce UI Kit](https://github.com/Furqankhanzada/flutter_eCommerce_ui_kit)：Flutter製のeコマースアプリ開発に必要なUIキット
 * [Flutter Elearning UI](https://github.com/Hash-Studios/e-learning-app)：Flutter製のeラーニングシステム
 * [Trace](https://github.com/trentpiercy/trace)：Flutter製の仮想通貨の相場を確認できるアプリ。
-* [https://github.com/mukulml96/Netflix-UI](https://github.com/mukulml96/Netflix-UI)：Flutterで開発されたNetflixのUI。
+* [Netflix-UI](https://github.com/mukulml96/Netflix-UI)：Flutterで開発されたNetflixのUI。
+* [Google Translation Example](https://github.com/JohannesMilke/google_translation_example)：Googleの翻訳APIを活用したFlutterアプリ。
 
 # React Native App
 
