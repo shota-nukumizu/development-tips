@@ -180,6 +180,7 @@
 * [scalablescripts](https://github.com/scalablescripts)：Pythonを使ったマイクロサービスを開発している
 * [sopheamen007](https://github.com/sopheamen007)：FlutterのUI開発の動画をYouTubeにアップしている
 * [itzpradip](https://github.com/itzpradip)：FlutterやReact Nativeの動画をアップしている開発者兼YouTuber
+* [JohannesMilke](https://github.com/JohannesMilke)：Flutter開発者兼YouTuber
 
 # 個人開発で開発されたサービス
 
