@@ -181,6 +181,7 @@
 * [sopheamen007](https://github.com/sopheamen007)：FlutterのUI開発の動画をYouTubeにアップしている
 * [itzpradip](https://github.com/itzpradip)：FlutterやReact Nativeの動画をアップしている開発者兼YouTuber
 * [JohannesMilke](https://github.com/JohannesMilke)：Flutter開発者兼YouTuber
+* [Kei Fijimawa](https://github.com/kboy-silvergym)：通称kboy。Flutter大学のCEO。
 
 # 個人開発で開発されたサービス
 
