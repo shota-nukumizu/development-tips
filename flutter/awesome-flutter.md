@@ -33,6 +33,7 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Trace](https://github.com/trentpiercy/trace)：Flutter製の仮想通貨の相場を確認できるアプリ。
 * [Netflix-UI](https://github.com/mukulml96/Netflix-UI)：Flutterで開発されたNetflixのUI。
 * [Google Translation Example](https://github.com/JohannesMilke/google_translation_example)：Googleの翻訳APIを活用したFlutterアプリ。
+* [flutter_chess_board](https://github.com/deven98/flutter_chess_board)：Flutterで開発された簡易版チェスアプリ。完成度の高さがエグい。
 
 # React Native App
 
