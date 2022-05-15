@@ -259,6 +259,10 @@
 
 [How to Build a Simple Chess App with Flutter - Medium](https://levelup.gitconnected.com/how-to-build-a-simple-chess-app-with-flutter-f2726022de8a)
 
+# Webサービス
+
+* [Sparkporo](https://sparktoro.com/)：Twitter検知アプリ。SNS時代の必須ツール。これでTwitterがより一層楽しくなるだろう。
+
 # チュートリアル一覧
 
 * [redux-toolkit-tutorial](https://github.com/john-smilga/redux-toolkit-tutorial)：Reduxで開発されたeコマース(JavaScript専用)
@@ -269,3 +273,4 @@
 * [REFFECT](https://reffect.co.jp/)：Web開発(主にフロントエンド)中心の記事。解説が非常にわかりやすい
 * [LogRocket Blog](https://blog.logrocket.com/)：Web開発やFlutter開発メイン。解説がわかりやすい
 * [Flutter逆引き辞典](https://zenn.dev/pressedkonbu/books/flutter-reverse-lookup-dictionary)：Zennで出たFlutter非公式のチートシート。
+* [Sparkporo Blog](https://sparktoro.com/blog/)：Sparkporoの公式ブログ。SNSマーケティングメイン。
