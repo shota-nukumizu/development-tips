@@ -257,6 +257,8 @@
 
 [Creating a Django API using Django Rest Framework APIView](https://medium.com/the-andela-way/creating-a-django-api-using-django-rest-framework-apiview-b365dca53c1d)
 
+[How to Build a Simple Chess App with Flutter - Medium](https://levelup.gitconnected.com/how-to-build-a-simple-chess-app-with-flutter-f2726022de8a)
+
 # チュートリアル一覧
 
 * [redux-toolkit-tutorial](https://github.com/john-smilga/redux-toolkit-tutorial)：Reduxで開発されたeコマース(JavaScript専用)
