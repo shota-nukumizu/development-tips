@@ -263,6 +263,10 @@
 
 [How to Use Redux in Flutter - Medium](https://thinkdiff.net/how-to-use-redux-in-flutter-app-6299f69fadee)
 
+[fruit shop management ui - GitHub](https://github.com/deepak07082/fruit_shop_management_UI)
+
+[fruit shop api - GitHub](https://github.com/deepak07082/fruitshop_api_flutter)
+
 # Webサービス
 
 * [Sparkporo](https://sparktoro.com/)：Twitter検知アプリ。SNS時代の必須ツール。これでTwitterがより一層楽しくなるだろう。
