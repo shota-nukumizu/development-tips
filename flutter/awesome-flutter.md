@@ -34,6 +34,7 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Netflix-UI](https://github.com/mukulml96/Netflix-UI)：Flutterで開発されたNetflixのUI。
 * [Google Translation Example](https://github.com/JohannesMilke/google_translation_example)：Googleの翻訳APIを活用したFlutterアプリ。
 * [flutter_chess_board](https://github.com/deven98/flutter_chess_board)：Flutterで開発された簡易版チェスアプリ。完成度の高さがエグい。
+* [Task Management App](https://github.com/Abdusin/task-management-app)：ポップな感じで開発されたFlutterタスク管理アプリ。
 
 # React Native App
 
