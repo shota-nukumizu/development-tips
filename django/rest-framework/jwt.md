@@ -89,3 +89,7 @@ curl \
 [Simple JWT - Django REST Framework](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
 
 [Django REST Framework Simple JWT- GitHub](https://github.com/jazzband/djangorestframework-simplejwt)
+
+# 余談
+
+Django REST Frameworkと他のプロジェクト(例えばFlutterやReact、Vue)を連携させるためにはJSON形式でデータを受け渡す処理を実装する必要があるので、Django REST Framework側でJSONデータの受け渡しを実装する機能を一から作り直す必要がある。
