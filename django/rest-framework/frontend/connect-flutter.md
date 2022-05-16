@@ -178,3 +178,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+
+# 参考サイト
+
+* [Connect Flutter with Django](https://github.com/geekyshow1/connectflutterdjango)
