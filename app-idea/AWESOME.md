@@ -261,6 +261,8 @@
 
 [Flutter best practices for Improve Performance - Medium](https://inficial.medium.com/flutter-best-practices-for-improve-performance-7e21e14efebb)
 
+[How to Use Redux in Flutter - Medium](https://thinkdiff.net/how-to-use-redux-in-flutter-app-6299f69fadee)
+
 # Webサービス
 
 * [Sparkporo](https://sparktoro.com/)：Twitter検知アプリ。SNS時代の必須ツール。これでTwitterがより一層楽しくなるだろう。
