@@ -21,3 +21,65 @@
 ## トークン認証
 
 トークン認証とは、後述するJWT認証と合わせてSPAの認証方式として最もポピュラーなアプローチ。Django REST Frameworkのトークン認証では、サーバ側のデータベースにユーザに1対1で紐づくトークンを発行し保存することで、ユーザのログイン状態を把握できる。**データベースのマイグレートが必要。**トークンをCookieに保存する必要はない。
+
+# DRFにおける認証(`authentication`)
+
+**DRFにおける認証スキームは、常にクラスのリストとして定義されている。DRFはリストの各クラスで認証を試み、認証に成功した最初のクラスの返り値を使用して`request.user`と`request.auth`を設定する。**
+
+認証に成功したクラスがない場合は、`request.user`にha
+`django.contrib.auth.models.AnonymousUser`のインスタンスが設定されて、`request.auth`には`None`が設定される。
+
+認証されないリクエストに対する`request.user`と`request.auth`の値は、`UNAUTHENTICATED_USER`と`UNAUTHENTICATED_TOKEN`の設定を利用して変更できるのだ。
+
+## 例
+
+`settings.py`
+
+```py
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ]
+}
+```
+
+また、`APIView`のクラスベースの`View`を使用して、`View`単位または`ViewSet`単位で認証スキームを設定できる。
+
+```py
+from rest_framework.authentication import SessionAuthentication, BasicAuthentication
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from rest_framework.views import APIView
+
+class ExampleView(APIView):
+    authentication_classes = [SessionAuthentication, BasicAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, format=None):
+        content = {
+            'user': str(request.user),  # `django.contrib.auth.User` instance.
+            'auth': str(request.auth),  # None
+        }
+        return Response(content)
+```
+
+あるいは、関数ベースで`@api_view`をデコレートして実装する方法もある。
+
+```py
+@api_view(['GET'])
+@authentication_classes([SessionAuthentication, BasicAuthentication])
+@permission_classes([IsAuthenticated])
+def example_view(request, format=None):
+    content = {
+        'user': str(request.user),  # `django.contrib.auth.User` instance.
+        'auth': str(request.auth),  # None
+    }
+    return Response(content)
+```
+
+## 許可されていない、あるいは禁止されている場合のレスポンス(401エラーと403エラー)
+
+どのような応答をするかは、認証スキームに依存する。複数の認証方式を使うことはもちろんできるが、レスポンスの種類を決定するために使えるのは一つの方式のみ。
+
+レスポンスの種類を決定する際には、`View`に設定された最初の認証クラスが使われる。**ただし、リクエスト認証に成功してもその実行を拒否されることがあるのは十分に注意が必要である。**
