@@ -59,7 +59,11 @@
   
 # すごい個人開発
 
+Web記事やGitHub、Webアプリを一覧で集めている。
+
 ## Web記事
+
+### 個人開発
 
 [開設後3週間で収益10万円を得た個人開発サイトでやったことの全部を公開する](https://qiita.com/jabba/items/1a49e860a09a613b09d4#%E6%8A%80%E8%A1%93%E5%8A%9B%E3%81%A8%E4%BC%81%E7%94%BB%E5%8A%9B%E3%81%AE%E7%9B%B8%E9%96%A2)
 
@@ -74,6 +78,8 @@
 [サクっと作った英語学習サービスがバズって1週間以内にやったこと](https://qiita.com/yuno_miyako/items/54d3c57775e9310a3745)
 
 [エンジニアが個人開発したWebサービス・アプリ100個紹介します](https://note.com/haken_se_30manen/n/n4f379cc91f11)
+
+### 言語とフレームワーク
 
 [Flutterで「MVVM・Provider・SQLite」を使った「検索バーアプリ」を作成する](https://zenn.dev/yass97/articles/abe3dd8f9b2c1b)
 
