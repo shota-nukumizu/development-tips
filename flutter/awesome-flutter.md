@@ -35,6 +35,7 @@ FlutterのサイトやFlutterについて詳細に解説されている動画や
 * [Google Translation Example](https://github.com/JohannesMilke/google_translation_example)：Googleの翻訳APIを活用したFlutterアプリ。
 * [flutter_chess_board](https://github.com/deven98/flutter_chess_board)：Flutterで開発された簡易版チェスアプリ。完成度の高さがエグい。
 * [Task Management App](https://github.com/Abdusin/task-management-app)：ポップな感じで開発されたFlutterタスク管理アプリ。
+* [Facebook UI](https://www.youtube.com/watch?v=HvLb5gdUfDE)：facebookアプリのクローン(Flutter製)
 
 # React Native App
 
