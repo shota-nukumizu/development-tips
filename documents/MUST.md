@@ -29,4 +29,4 @@
 * [Firebase](https://github.com/firebase/firebase-tools)
 * [Supabase](https://github.com/supabase/supabase)
 * [Material Design](https://github.com/material-components)
-* [NativeScript](https://github.com/NativeScript/NativeScript)
+* [Solidjs](https://github.com/solidjs/solid)
