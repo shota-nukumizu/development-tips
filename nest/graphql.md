@@ -69,8 +69,50 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo'
 export class AppModule {}
 ```
 
+以下のような形で拡張子`.gql`のファイルを作成できる。
+
+```ts
+@Module({
+    imports: [
+        GraphQLModule.forRoot<ApolloDriverConfig>({
+            driver: ApolloDriver,
+            autoSchemaFile: join(process.cwd(), 'src/schema.gql')
+        })
+    ]
+})
+```
+
+また、GraphQLのスキーマはメモリ上で作成できる。
+
+```ts
+@Module({
+    imports: [
+        GraphQLModule.forRoot<ApolloDriverConfig>({
+            driver: ApolloDriver,
+            autoSchemaFile: true
+        })
+    ]
+})
+```
+
+デフォルトでは、生成されたスキーマの肩は含まれるモジュールで定義された順番に並ぶ。スキーマを辞書順に並べる際には`sortSchema`プロパティを`true`に設定する
+
+```ts
+@Module({
+    imports: [
+        GraphQLModule.forRoot<ApolloDriverConfig>({
+            driver: ApolloDriver,
+            autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+            sortSchema: true
+        })
+    ]
+})
+```
+
 # 余談
 
 REST APIでマイクロサービスを開発することを検討している自分にとって、GraphQLは多少わかりにくいところが多数あった。
 
-正直GraphQLで開発を進めるメリットがいまいち自分で説明できないので、とりあえず現時点のNestJS開発ではREST APIをメインに開発を進めていく。
+**とりあえずGraphQLのファイル場所(いわゆる`path`)を設定して、それに準じた`.ts`ファイルを作成する形で開発を進めることはある程度理解できた。**
+
+**正直GraphQLで開発を進めるメリットがいまいち自分で説明できないので、とりあえず現時点のNestJS開発ではREST APIをメインに開発を進めていく。**
