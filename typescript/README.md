@@ -9,3 +9,17 @@
 * [Design Patterns in Typescript](https://github.com/torokmark/design_patterns_in_typescript)：TypeScript設計パターンのまとめ
 
 TypeScriptで開発を進める際に基本となる知識をここで叩き入れる。
+
+# TypeScriptの環境構築
+
+| :point_up: POINT         |
+|:---------------------------|
+| TypeScriptでトランスコンパイルできること、Nodejsプロジェクトのセットアップ手順、アプリケーションのビルドと実行の方法と働き      |
+
+まず最初に、コマンドプロンプトやターミナルを起動して以下のコマンドを叩く。
+
+```
+npm install typescript -g
+```
+
+以下のコマンドを実行してバージョンが確認できればインストール完了。
