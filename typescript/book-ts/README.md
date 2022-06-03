@@ -50,6 +50,8 @@ person.name = "Mary Jane";
 console.log(person.name); // Mary Jane
 ```
 
+**あと、TypeScriptにおける`;`を文末につける意味が正直理解できていない。**
+
 ## 要望
 
 以下の内容を技術書に載せるのもありかもしれない？
