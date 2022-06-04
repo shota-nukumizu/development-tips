@@ -129,4 +129,6 @@ Nest✕Next✕Tailwindで開発予定
 * Tailwind CSS
 * Material UI(Vuetify, MUIメインか)
 
+**最終的には、バックエンドをPythonやTypeScriptで書いて、フロントエンドをFlutterかReact、Vueで書いていく予定になるかもしれない**
+
 主にマイクロサービスやスマホアプリメインで開発を進めていく。
