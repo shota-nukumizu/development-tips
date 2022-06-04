@@ -1,3 +1,7 @@
+# Application Ideas
+
+AndroidアプリとWEBアプリ両方ともリリースする予定。作り方は個人のGitbookあるいはGitHubのリポジトリにあるREADMEに簡潔にまとめる。
+
 # 現在開発中のアプリのアイデア
 
 * 文房具サブスクサービス
@@ -117,7 +121,7 @@ Nest✕Next✕Tailwindで開発予定
 # 使用技術
 
 * Django REST Framework
-* TypeScript
+* TypeScript(NestJS, React, Vue)
 * Flutter
 * Firebase
 * SQLite
