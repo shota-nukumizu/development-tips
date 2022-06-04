@@ -273,6 +273,8 @@ Web記事やGitHub、Webアプリを一覧で集めている。
 
 [fruit shop api - GitHub](https://github.com/deepak07082/fruitshop_api_flutter)
 
+[madewithsupabase](https://www.madewithsupabase.com/)：supabaseで開発されたプロダクトの集まり。
+
 # Webサービス
 
 * [Sparkporo](https://sparktoro.com/)：Twitter検知アプリ。SNS時代の必須ツール。これでTwitterがより一層楽しくなるだろう。
