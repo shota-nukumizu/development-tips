@@ -74,6 +74,10 @@ a = b + c
 
 <b>セミコロンの有無に関係なくJavaScriptのプログラムが動くのは事実なので、どちらかに優位があるというわけではない。</b>しかし、他人と共同作業しているコードであればそのプロジェクトのスタイルに合わせることは言うまでもないだろう。
 
+# 私の意見
+
+**JavaScript同様にTypeScriptもコーディングの自由度が高いので、ESLint等のコーディング規約で統一した方がいい。**
+
 # 参考
 
 https://blog.tai2.net/automatic_semilocon_insertion.html
