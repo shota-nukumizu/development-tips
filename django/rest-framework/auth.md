@@ -83,3 +83,63 @@ def example_view(request, format=None):
 どのような応答をするかは、認証スキームに依存する。複数の認証方式を使うことはもちろんできるが、レスポンスの種類を決定するために使えるのは一つの方式のみ。
 
 レスポンスの種類を決定する際には、`View`に設定された最初の認証クラスが使われる。**ただし、リクエスト認証に成功してもその実行を拒否されることがあるのは十分に注意が必要である。**
+
+# JWT(`JSON Web Token`)認証
+
+実装には`django-rest-framework-simplejwt`を使う。インストールは以下のコマンドで行う。
+
+```
+pip install django
+pip install djangorestframework
+pip install djangorestframework-simplejwt
+django-admin startproject backend .
+py manage.py migrate
+```
+
+## 基本設定
+
+`backend/settings.py`
+
+```py
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': {
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    }
+}
+```
+
+`backend/urls.py`にアクセスして、以下のプログラムを書いてDjangoに簡単なJWT認証を実装できるように命令する。
+
+```py
+# backend/urls.py
+from django.contrib import admin
+from django.urls import path
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+]
+```
+
+再度`backend/settings.py`にアクセスして、変数`INSTALL_APPS`に`rest_framework_simplejwt`を追加。
+
+```py
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'rest_framework_simplejwt', #追加
+]
+```
+
+あとはコマンドで管理者を作成し、仮想サーバを立ち上げたあとは`http:localhost:8000/api/token`にアクセスする。
+
+その後、`username`と`password`を入力しておこう。そうすれば、簡単にJWT認証を実装できる。(**フロントエンドで連携すれば簡単に認証ができるかも？**)
