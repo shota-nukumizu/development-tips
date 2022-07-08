@@ -1,77 +1,3 @@
-# JavaScriptにおける`this`
-
-**関数の`this`キーワードは他の言語とは少し異なる動作をする。**
-
-殆どの場合、`this`の値は関数がどのような値をするかで決定する。実行中に代入で設定できず、関数が呼び出されるたびに違う形になる可能性がある。
-
-```js
-const test = {
-  prop: 42,
-  func: function() {
-    return this.prop;
-  },
-};
-
-console.log(test.func());
-// 出力結果：42
-```
-
-JavaScriptにおける`this`とは、実行コンテキストのプロパティで非厳密モードでは常にオブジェクトへの参照、厳密モードでは任意の値を読み取れる。
-
-## `this`の特徴―グローバルな実行コンテキスト
-
-グローバルな実行コンテキスト（関数の外側）では、ストリクトモードであるかどうかに関わらず、グローバルオブジェクトを示す。
-
-```js
-// In web browsers, the window object is also the global object:
-console.log(this === window); // true
-
-a = 37;
-console.log(window.a); // 37
-
-this.b = "MDN";
-console.log(window.b)  // "MDN"
-console.log(b)         // "MDN"
-```
-
-## `this`の特徴―関数
-
-関数内部では、その関数がどのように呼び出されるのかに応じてこの値が決まる。
-
-```js
-function f1() {
-  return this;
-}
-
-// In a browser:
-f1() === window; // true
-
-// In Node:
-f1() === globalThis; // true
-```
-
-# TypeScriptにおける`this`
-
-`this`は現在のオブジェクトを参照するもので、文脈によっては参照するオブジェクトが異なる。
-
-TypeScriptの`this`の使い方は、それが使われる文脈に依存する。
-
-次の例では、トラッククラスが`this`を使用している。このキーワードはコンストラクタと`getEmployeeName`関数で異なるオブジェクトを参照している。コンストラクタでは`Employee`クラスを参照しているが、`getEmployeeName`では TypeScriptの特殊型である`any`型を参照している。
-
-```ts
-class Employee{
-	name:string;
-	constructor(name:string) {
-		this.name = name;
-		alert(this.name);
-		alert(this.getEmployeeName().name);
-		}
-
-getEmployeeName=function() {
-	return this; //this is of any type
-}
-```
-
 # `this`と`function`の関係
 
 一言でまとめると、**`this`は`function`を呼んだときの`.`の前についているオブジェクトを示す。**
@@ -108,3 +34,55 @@ obj.test = test
 ```
 
 その上で、`obj.test()`を呼び出すと、`this`は`obj`になる。
+
+## メソッドチェーン
+
+複数の`function`を数珠つなぎで呼び出すメソッドチェーンは`.`の前が関数になる。この場合は、その関数が返すオブジェクトを参照することになる。関数で`return`を省略したり、`return`単独で呼ぶと`undefined`が返ってくるのでメソッドチェーンは利用できない。
+
+```js
+var obj = {
+  test: function() { return this },
+  alert: function(msg) { console.log(msg) }
+}
+var test = obj.test
+obj.test().alert("hello") // => hello とコンソールに表示
+test().alert("hello") // => アラート表示
+```
+
+関数`alert`の呼び出しに`.`があり、その前に関数`test`がある。関数`test`の返り値は`this`なので、その`test`の呼び出し方によって参照されるオブジェクトによって関数`alert`の結果が変わる。
+
+## `call`と`apply`
+
+これら２つを使って関数を呼び出すと`.`に前につけるオブジェクトを指定できる。
+
+```js
+function test() {
+    console.log(this)
+}
+var obj = { name: "obj" }
+test() // => Window {frames: Window, postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, …}
+test.call(obj) // => {name: "obj"}
+```
+
+## コンストラクタ
+
+`function`に対して、`new`構文を利用してオブジェクトを作成できる。大雑把に言ってしまえば`call`の変形構文だ。
+
+```js
+var obj = new function() {
+    this.name = "obj"
+    console.log(this) // => {name: "obj"}
+}
+```
+
+この場合`function`が呼ばれるが、`this`はグローバルオブジェクトでも`undefined`でもない。`new`を使えば、新規にオブジェクトを作成してそれに対し`call`を使って`function`を呼び出して関数内部で`return this`するような動作になる。
+
+ざっくり、以下のコードと挙動はだいたい同じ。
+
+```js
+var obj = function() {
+    this.name = "obj"
+    console.log(this) // => {name: "obj"}
+    return this
+}.call({})
+```
