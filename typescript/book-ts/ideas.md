@@ -11,3 +11,4 @@
 * `undefined`と`void`の違いを図解形式で解説入れてみる？
 * TypeScript Deep Dive日本語版を使って、TypeScriptのコーディング規約やJSXについて簡潔にまとめる？
 * ReactやVue(TypeScriptバージョン)のチートシートを入れたい。そうすれば10分程度で本書の内容やTypeScriptの文法が理解できるようになる
+* ページ「`tsconfig.json`を設定する」の最後のページで、それぞれのプロパティの一覧のページを最後に書く？(アクセスしやすくするため)
