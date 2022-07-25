@@ -141,6 +141,8 @@ const App: Component = () => {
 export default App
 ```
 
+次に、SolidJSで状態を作成及び管理する方法を解説する。ここでは、`taskList`の状態を作成し、状態に新しいタスクを追加、削除および完了ステータスを更新するためを関数を作成する。
+
 # 参考
 
 * https://blog.logrocket.com/build-task-tracker-solidjs-typescript/
