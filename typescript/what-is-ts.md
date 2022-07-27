@@ -75,7 +75,7 @@ JavaScriptはブラウザ上で動作するプログラミング言語なので�
 
 ***
 
-JavaScript is a programming language that runs in the user's browser.
+JavaScript is a programming language that runs in the user's browser. gitIn principle, web-based programming languages are executed on the server, but JavaScript runs in the user's browser.
 
 Since JavaScript is a programming language that runs on the browser, it is often used in web development. For example, JavaScript is used to realize mouse processing and delay processing. In most cases, form submissions and asynchronous processing are also implemented using JavaScript.
 
