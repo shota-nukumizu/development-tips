@@ -27,6 +27,7 @@ TypeScript is designed for the development of large applications. Furthermore, a
 Therefore, in this article, we will.
 
 * An overview of TypeScript and how it differs from JavaScript
+* The background of TypeScript
 * Why you should study TypeScript
 
 I have prepared this article to be useful for those who are interested in TypeScript, as well as for those who have never heard of TypeScript and are thinking of learning it from this point on.
@@ -98,6 +99,42 @@ The difference between dynamic and static typing is briefly explained below.
 TypeScriptはJavaScriptと比較して記述がシンプルに済ませられるように設計されている。これはTypeScriptがオブジェクト指向に対応しているからだ。オブジェクト指向を利用することで繰り返しのコード量を最小限に抑えられ、これによってシンプルに記述できるようになっている。
 
 JavaScriptはすべての処理を愚直に記述する必要があるので、どうしてもプログラムが冗長になりがちである。他のプログラミング言語であれば簡略化できる内容でも、JavaScriptではそのように記述できない。しかし、TypeScriptでは他のプログラミングに近い書き方ができるので、読みやすく開発しやすいシンプルな記述を実現できる。
+
+***
+
+TypeScript is designed to be simpler to write than JavaScript. This is because TypeScript supports object-oriented programming. By using object orientation, the amount of repetitive code can be kept to a minimum, which makes it simple to write.
+
+Since JavaScript requires all processes to be written in a straightforward manner, programs tend to be verbose. Even if other programming languages can be simplified, JavaScript cannot be written in such a way. However, TypeScript can be written in a way that is similar to other programming languages, making it possible to achieve simple descriptions that are easy to read and easy to develop.
+
+## 型宣言のしくみ
+
+TypeScriptとJavaScriptには型宣言のしくみに大きな違いがある。前述した通り、TypeScriptは事前に型を指定する静的型付けであるが、JavaScriptはプログラムの実行時に型が判断される動的型付けである。型宣言の違いはプログラム開発において大きな影響を与えるので、特に理解しておかなければならない。
+
+また、TypeScriptのような静的型付けでは事前に変数の型を宣言して置かなければならない。プログラマが意図的にデータの型を決定する必要があり、開発の手間がかかるけど意図しない値が入るのを未然に防げるメリットをもたらす。
+
+それ以外にも、型宣言があることで以下のようなメリットがある。
+
+* バグの早期発見
+* コーディングの効率アップ
+* コードの読みやすさの向上
+* 大人数での開発の効率化
+
+逆に、JavaScriptのような動的型付けでは事前に変数の型を宣言する必要がないので、意図しない型の値の代入やスペルミスなどで別の変数を宣言した扱いになるなどのトラブルを引き起こす。
+
+***
+
+There is a major difference between TypeScript and JavaScript in the way type declarations work. As mentioned above, TypeScript is statically typed, where the type is specified in advance, while JavaScript is dynamically typed, where the type is determined at program execution. The difference in type declarations has a significant impact on program development and must be understood in particular.
+
+In addition, with static typing such as TypeScript, the type of a variable must be declared in advance. This requires the programmer to deliberately determine the type of data, which is time-consuming to develop but has the advantage of preventing unintended values from being entered.
+
+Besides that, the type declaration has the following advantages.
+
+* Early detection of bugs
+* Increased coding efficiency
+* Improved code readability
+* Improved efficiency of development with a large number of developers
+
+Conversely, dynamic typing such as JavaScript does not require declaring the type of a variable in advance, which causes problems such as assigning a value of an unintended type or treating a variable as having been declared differently due to a misspelling.
 
 # The background of TypeScript
 
