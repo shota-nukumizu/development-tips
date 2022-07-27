@@ -106,7 +106,7 @@ TypeScript is designed to be simpler to write than JavaScript. This is because T
 
 Since JavaScript requires all processes to be written in a straightforward manner, programs tend to be verbose. Even if other programming languages can be simplified, JavaScript cannot be written in such a way. However, TypeScript can be written in a way that is similar to other programming languages, making it possible to achieve simple descriptions that are easy to read and easy to develop.
 
-## 型宣言のしくみ
+## The Mechanism of Type Delaration
 
 TypeScriptとJavaScriptには型宣言のしくみに大きな違いがある。前述した通り、TypeScriptは事前に型を指定する静的型付けであるが、JavaScriptはプログラムの実行時に型が判断される動的型付けである。型宣言の違いはプログラム開発において大きな影響を与えるので、特に理解しておかなければならない。
 
@@ -135,6 +135,27 @@ Besides that, the type declaration has the following advantages.
 * Improved efficiency of development with a large number of developers
 
 Conversely, dynamic typing such as JavaScript does not require declaring the type of a variable in advance, which causes problems such as assigning a value of an unintended type or treating a variable as having been declared differently due to a misspelling.
+
+## Learning costs
+
+TypeScriptもJavaScriptも両方根本的な部分で大きな違いや差はない。TypeScriptはあくまでJavaScriptを改良したプログラミング言語で、実装できる機能などはJavaScriptのものを踏襲している。ところが、両者では学習コストが異なる。
+
+基本的にTypeScriptはJavaScriptよりも学習コストが高い。これはまったく知識がない状態からTypeScriptを学習する場合でJavaScriptの知識があることを考慮していない。JavaScriptの前提知識があるとTypeScriptの学習コストは大幅に下がる。
+
+TypeScriptの学習コストが高い最大の理由は、TypeScriptがコンパイルの必要なプログラミング言語だからだ。一般的に、プログラミング言語はコンパイルが必要となると開発環境の準備をしなければならない。これは時間を要し一定のスキルを要求されるので、学習コストが高くなってしまう。
+
+それだけではなく、TypeScriptは方宣言が必要なプログラミング言語である。この点もJavaScriptよりも学習コストが高くなる最大の要因となっている。型宣言のルールが厳しいプログラミング言語は文法が複雑な傾向にあり、TypeScriptもこれに該当してしまうので学習コストが高い。
+
+***
+
+There are no fundamental differences between TypeScript and JavaScript; TypeScript is a programming language that has been modified from JavaScript and follows JavaScript in the features it can implement. However, the learning cost is different between the two.
+
+Basically, TypeScript is more expensive to learn than JavaScript. This is because TypeScript is learned with no knowledge at all and does not take JavaScript knowledge into consideration.
+
+The main reason for the high learning cost of TypeScript is that TypeScript is a programming language that requires compilation. In general, a programming language requires a development environment to be prepared when it needs to be compiled. This is time consuming and requires a certain level of skill, making the learning cost high.
+
+Not only that, but TypeScript is a programming language that requires a directional declaration. This is also the biggest factor that makes it more expensive to learn than JavaScript. Programming languages with strict type declaration rules tend to have complex grammars, and TypeScript falls into this category, making it expensive to learn.
+
 
 # The background of TypeScript
 
