@@ -75,14 +75,22 @@ JavaScriptはブラウザ上で動作するプログラミング言語なので�
 
 ***
 
-JavaScript is a programming language that runs in the user's browser. gitIn principle, web-based programming languages are executed on the server, but JavaScript runs in the user's browser.
+JavaScript is a programming language that runs in the user's browser. In principle, web-based programming languages are executed on the server, but JavaScript runs in the user's browser.
 
 Since JavaScript is a programming language that runs on the browser, it is often used in web development. For example, JavaScript is used to realize mouse processing and delay processing. In most cases, form submissions and asynchronous processing are also implemented using JavaScript.
 
 
 # The difference between TypeScript and JavaScript
 
+プログラミング言語には、動的型付けと性的型付けの2種類がある。先程、JavaScriptの完全上位互換がTypeScriptであると説明した。簡潔に述べるなら、JavaScriptが動的型付け、TypeScriptは静的型付けの言語で、この点が両者の最も大きな違いと言っていいだろう。
 
+動的型付けと静的型付けの違いを簡潔に説明する。
+
+***
+
+There are two types of programming languages: dynamically and statically typed. Earlier, I explained that TypeScript is the fully upward compatible of JavaScript. To put it succinctly, JavaScript is a dynamically typed language and TypeScript is a statically typed language, and this is the most significant difference between the two.
+
+The difference between dynamic and static typing is briefly explained below.
 
 # The background of TypeScript
 
