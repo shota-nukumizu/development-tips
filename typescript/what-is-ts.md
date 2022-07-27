@@ -159,6 +159,40 @@ Not only that, but TypeScript is a programming language that requires a directio
 
 # The background of TypeScript
 
+TypeScriptはJavaScriptでも大規模なアプリケーションを開発しやすくすることを目的に開発されたプログラミング言語である。
+
+もともと、JavaScriptは大規模な開発を想定した設計ではなかった。それでも、JavaScript自体を進化させて大規模なキーワードに対応していけばよかったはずだ。しかし、その方法はうまくいかなかった。かわりに、大規模開発の一部はTypeScriptが引き受けることになったのである。
+
+どうしてそうなったのだろうか？その答えはJavaScriptの歴史にある。
+
+1995年にリリースされたJavaScriptは当初、大規模な開発に用いられることが想定されていない。10年もすると、大規模開発のニーズが顕在化し始め、JavaScriptは対応に迫られる。しかし、ベンダー同士の合意を取り付けられずJavaScriptの進化は停滞する。
+
+JavaScriptが硬直状態だった間も、Webアプリケーションは大規模化が進んで開発のレベルが日に日に増してきた。それに対して、様々な解決策がコミュニティからなされるようになる。
+
+その流れの中でTypeScriptが発明された。TypeScriptは大規模開発の困難さに立ち向かう言語として、JavaScriptの完全上位互換・型・モジュール性の3つの特徴を携えて2012年に発表された。
+
+TypeScriptが発表されて以来、JavaScriptも進化を始めて6年ぶりのアップデートとしてECMAScript 2015を発表し、そこから毎年新しい仕様を発表し続けている。それでもなお、TypeScriptの最大の特徴である「型」は依然としてJavaScriptにはない。
+
+今日においてTypeScriptが大規模開発で支持されるのは、JavaScriptでは得られない開発体験があるためである。
+
+***
+
+TypeScript is a programming language developed with the goal of making it easier to develop large-scale applications in JavaScript.
+
+Originally, JavaScript was not designed for large-scale development. Nevertheless, it would have been better if JavaScript itself had evolved to support large-scale keywords. However, that approach did not work. Instead, TypeScript took over some of the large-scale development.
+
+How did this happen? The answer lies in the history of JavaScript.
+
+Released in 1995, JavaScript was not initially intended for large-scale development. 10 years later, the need for large-scale development began to emerge and JavaScript was forced to adapt. However, JavaScript's evolution stalled due to the lack of consensus among vendors.
+
+Even while JavaScript was in a rigid state, web applications were becoming larger and larger, and the level of development was increasing day by day. In response, the community came up with various solutions.
+
+TypeScript was invented in 2012 as a language that could face the difficulties of large-scale development, with the three features of full upward compatibility with JavaScript, types, and modularity.
+
+Since TypeScript was announced, JavaScript has also begun to evolve, releasing ECMAScript 2015 as its first update in six years, and continuing to release new specifications every year from there. Still, TypeScript's most important feature, "types," remains absent from JavaScript.
+
+Today, TypeScript is favored for large-scale development because it offers a development experience not available in JavaScript.
+
 
 # The reason why you should use TypeScript
 
