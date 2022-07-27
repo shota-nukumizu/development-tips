@@ -34,6 +34,36 @@ I hope this article will be of help to you in deepening your understanding of Ty
 
 # What is TypeScript?
 
+TypeScriptの主な特徴は次のとおりである。
+
+* JavaScriptの完全上位互換
+* 安全性が高い
+* 型推論がある
+* 開発を楽しくさせる
+
+TypeScriptはJavaScriptに方が追加されて、それ以外の部分は基本的に互換性がある。そのため、これまでJavaScriptに慣れ親しんできたなら時間を書けずに習得できる。
+
+TypeScriptには型推論があり、あらゆるところに型を指定する必要はなく、TypeScriptが自動で型を設定してくれる部分がある。この機能の恩恵でコーディング量を大幅に減らせる。
+
+TypeScriptは型安全である、型があることでプログラムをコンパイルする際に様々な問題を発見してくれる。コンパイルはプログラムのエラーを厳しく指摘してくれる。
+
+TypeScriptはコンパイルが速く、洗練された型機能を持ち、JavaScriptとの互換性を持つ。これまでJavaScriptに型がないことによって悩まされてきた「プログラムを実行してみないとわからない」という恐怖から解放され、プログラミングを楽しくできる。
+
+***
+
+The main features of TypeScript are as follows
+
+* Fully upward compatible with JavaScript
+* Highly secure
+* Has type inference
+* Makes development fun
+
+TypeScript is basically compatible with JavaScript except for the addition of more to JavaScript. Therefore, if you have been familiar with JavaScript so far, you can learn it without writing time.
+
+TypeScript has type inference, which means that there is no need to specify types everywhere, and TypeScript will automatically set types for you in some areas. The benefit of this feature can greatly reduce the amount of coding.
+
+TypeScript compiles quickly, has sophisticated type capabilities, and is compatible with JavaScript. It makes programming fun, freeing you from the fear of "not knowing until you run the program" that has plagued JavaScript in the past due to its lack of types.
+
 
 # What is JavaScript?
 
