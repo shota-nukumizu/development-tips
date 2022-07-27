@@ -62,10 +62,22 @@ TypeScript is basically compatible with JavaScript except for the addition of mo
 
 TypeScript has type inference, which means that there is no need to specify types everywhere, and TypeScript will automatically set types for you in some areas. The benefit of this feature can greatly reduce the amount of coding.
 
+TypeScript is type-safe; the presence of a type will help you find various problems when compiling your program. The compilation will strictly point out errors in the program.
+
 TypeScript compiles quickly, has sophisticated type capabilities, and is compatible with JavaScript. It makes programming fun, freeing you from the fear of "not knowing until you run the program" that has plagued JavaScript in the past due to its lack of types.
 
 
 # What is JavaScript?
+
+JavaScriptはユーザのブラウザ上で動作するプログラミング言語である。Web系のプログラミング言語は原則サーバ上で実行されるが、JavaScriptについてはユーザのブラウザ上で動作する。
+
+JavaScriptはブラウザ上で動作するプログラミング言語なので、Web制作に利用されるケースが多くある。例えば、マウスの処理や遅延処理などを実現するためにJavaScriptが利用されている。また、フォームの送信や非同期処理などもJavaScriptを利用して実装されるケースが大半だ。Webサイトを実装するにあたって、フロントエンドで実装するべきものは原則JavaScriptで書かれている。
+
+***
+
+JavaScript is a programming language that runs in the user's browser.
+
+Since JavaScript is a programming language that runs on the browser, it is often used in web development. For example, JavaScript is used to realize mouse processing and delay processing. In most cases, form submissions and asynchronous processing are also implemented using JavaScript.
 
 
 # The difference between TypeScript and JavaScript
