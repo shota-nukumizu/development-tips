@@ -10,6 +10,7 @@ TypeScriptは大規模なアプリケーションの開発のために設計さ�
 
 * TypeScriptの概要とJavaScriptとの違い
 * TypeScriptを勉強するべき理由
+* TypeScriptの背景
 
 以上の２つに関して、一個人の見解を述べながら徹底解説していく。TypeScriptに興味のある人、あるいはTypeScriptを知らない人やこれっから学ぼうと思っている人にも参考になるように記事を書いた。
 
@@ -91,6 +92,12 @@ Since JavaScript is a programming language that runs on the browser, it is often
 There are two types of programming languages: dynamically and statically typed. Earlier, I explained that TypeScript is the fully upward compatible of JavaScript. To put it succinctly, JavaScript is a dynamically typed language and TypeScript is a statically typed language, and this is the most significant difference between the two.
 
 The difference between dynamic and static typing is briefly explained below.
+
+## Easy Coding
+
+TypeScriptはJavaScriptと比較して記述がシンプルに済ませられるように設計されている。これはTypeScriptがオブジェクト指向に対応しているからだ。オブジェクト指向を利用することで繰り返しのコード量を最小限に抑えられ、これによってシンプルに記述できるようになっている。
+
+JavaScriptはすべての処理を愚直に記述する必要があるので、どうしてもプログラムが冗長になりがちである。他のプログラミング言語であれば簡略化できる内容でも、JavaScriptではそのように記述できない。しかし、TypeScriptでは他のプログラミングに近い書き方ができるので、読みやすく開発しやすいシンプルな記述を実現できる。
 
 # The background of TypeScript
 
