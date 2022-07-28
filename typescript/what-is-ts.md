@@ -196,5 +196,57 @@ Today, TypeScript is favored for large-scale development because it offers a dev
 
 # The reason why you should use TypeScript
 
+なぜTypeScriptを学ぶべきなのか？Webアプリケーションのフロントエンドを開発するのに、最低限必要となる言語はHTMLとCSSを除けばJavaScriptだけである。JavaScriptをマスターできれば、かなり自由にフロントエンドを実装できる。それにもかかわらず、どうしてTypeScriptを学ぶべきだろうか？
+
+本記事ではTypeScriptを学ぶべき理由を紹介する。
+
+## 大規模開発に最適だから
+
+前章でTypeScriptが発明されるに至った歴史的背景を「TypeScript誕生の背景」で見たが、TypeScriptはJavaScriptでは対応しきれない大規模開発を克服するために誕生した。
+
+TypeScriptは大規模開発に要求される三大特徴を備えている。
+
+* 型チェック
+* モジュール性
+* 緩やかな学習コスト
+
+これらのうち特に型による静的チェックは、TypeScriptにTypeという名前があるようにTypeScriptの注目するべき機能だ。型チェックはプログラムを実行しなくても、プログラムのバグに気づける。バグは発見が遅れるほど修正するコストが高くなるものの、TypeScriptはコーディング中に頻繁にチェックできるのでバグを早期発見しやすい。Airbnbによれば、TypeScriptを使っていたらAirbnbの38%のバグを未然に防げたと見る分析を発表している。
+
+また、型があることでプログラムの可読性や理解しやすさが上がったり、エディタの保管機能を活かすことができるので、コーディングの効率がアップします。
+
+しかし、静的チェックは品質保証の銀の弾丸ではないことは注意してください。静的チェックは、誰が読んでも絶対におかしいと客観的に判断できるような欠陥を見つけ出すためにある。より詳しく言うと、静的チェックは定義されていない変数へのアクセスや正しくないデータ型の取り扱いなどには対応できない。それでもなお、静的チェックのおかげでTypeScriptで検出できる類いのバグテストはテスト工程から省略できるのは事実である。
+
+## JavaScriptの前提知識があれば使える
+
+TypeScriptはJavaScriptの完全上位互換だ。これをわかりやすく言えば、TypeScriptはJavaScriptの仕様をそのままにTypeScriptならではの新しい機能や利点を追加したものだ。
+
+この特徴により、JavaScriptの知識さえあればTypeScriptを使い始められる。これは新しい言語の学習コストをとても緩やかにしてくれる。新しい言語を導入するとなると、難しい言語だと学習に数ヶ月要し、そこからやっと書き始めるということがよくある。
+
+ところが、TypeScriptの場合はとりあえずJavaScriptとして書き始め、少しずつTypeScriptを学んでいき、徐々にTypeScriptの恩恵を最大化できるようにコードを手直しするというようなアプローチができる。
+
+JavaScriptの上位互換であるということは、裏を返せばJavaScriptを知らなければならないということになる。そのため、TypeScriptを学ぶならまずはJavaScriptについてよく学んでおく必要があるのだ。JavaScriptの前提知識さえあれば、TypeScriptを学ぶのにそれほど苦労はしないだろう。
+
+***
+
+Why should I learn TypeScript? Nevertheless, why should you learn TypeScript?The only minimum language required to develop the front end of a web application, aside from HTML and CSS, is JavaScript.If you can master JavaScript, you can implement a front end quite freely.
+
+In this article, we will introduce four reasons why you should learn TypeScript.
+
+We saw the historical background that led to the invention of TypeScript in the previous chapter, "Background of the birth of TypeScript," and TypeScript was born to overcome large-scale development that JavaScript could not handle.
+
+TypeScript has three major characteristics required for large-scale development.
+
+* Type checking
+* Modularity
+* Moderate learning cost
+
+Among these, static checking by type is a particularly noteworthy feature of TypeScript, as TypeScript has the name Type. Type checking can detect bugs in a program without executing the program. According to Airbnb, TypeScript could have prevented 38% of Airbnb's bugs. TypeScript is also a very useful tool for the development of programs.
+
+Types also increase the readability and understandability of a program, and they increase coding efficiency because they allow editors to take advantage of the storage capabilities of the editor.
+
+It is important to note, however, that static checks are not a silver bullet for quality assurance. Static checks are there to find defects that can be objectively determined to be absolutely wrong by anyone who reads the file. To be more precise, static checks cannot deal with accessing variables that are not defined or handling incorrect data types. Still, it is true that static checks can eliminate from the testing process the kinds of bug tests that TypeScript can detect.
+
+
+
 
 # Overview
