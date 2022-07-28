@@ -28,7 +28,7 @@ Therefore, in this article, we will.
 
 * An overview of TypeScript and how it differs from JavaScript
 * The background of TypeScript
-* Why you should study TypeScript
+* The reason why you should study TypeScript
 
 I have prepared this article to be useful for those who are interested in TypeScript, as well as for those who have never heard of TypeScript and are thinking of learning it from this point on.
 
@@ -247,6 +247,26 @@ Types also increase the readability and understandability of a program, and they
 It is important to note, however, that static checks are not a silver bullet for quality assurance. Static checks are there to find defects that can be objectively determined to be absolutely wrong by anyone who reads the file. To be more precise, static checks cannot deal with accessing variables that are not defined or handling incorrect data types. Still, it is true that static checks can eliminate from the testing process the kinds of bug tests that TypeScript can detect.
 
 
-
-
 # Overview
+
+今回の記事では、主に次の内容について話した。
+
+* TypeScriptの概要とJavaScriptとの違い
+* TypeScriptを勉強するべき理由
+* TypeScriptの背景
+
+TypeScriptについて十分理解できただろうか？もしかしたら、本記事を読んでいる人の中には「JavaScriptでフロントエンドのプログラムが動くのだから、JavaScriptだけで十分だと思う」と考える人もいるだろう。
+
+しかし、TypeScriptは現在のフロントエンド開発では必要不可欠な言語である。TypeScriptはJavaScriptが抱えている問題を解決してくれる。本記事がTypeScriptを学ぶきっかけになれば非常に幸いである。
+
+***
+
+In this article, we mainly discussed the following subjects.
+
+* An overview of TypeScript and how it differs from JavaScript
+* The background of TypeScript
+* The reason why you should study TypeScript
+
+Did you fully understand TypeScript? Perhaps some people reading this article may think that JavaScript is sufficient for front-end programs because it runs on JavaScript.
+
+However, TypeScript is an indispensable language for current front-end development, and TypeScript solves the problems that JavaScript has. I would be very happy if this article provides an opportunity for you to learn TypeScript.
