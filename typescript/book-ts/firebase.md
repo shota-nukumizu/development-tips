@@ -538,3 +538,7 @@ const deleteTodo = async (documentId:string) => {
 ```
 
 取得したTodoアイテムの削除ボタンをクリックすると、そのオブジェクトはコレクションから削除される。
+
+# 参考記事
+
+* [Introduction to Next.js, TypeScript, and Firebase Database](https://www.section.io/engineering-education/introduction-to-nextjs-with-typescript-and-firebase-database/)
