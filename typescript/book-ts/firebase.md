@@ -510,7 +510,15 @@ const updateTodo = async (documentId: string) => {
 <button type="button" onClick={() => updateTodo(todo.data().id)}>Mark as done</button>
 ```
 
+取得したTodoに対して、`Mark as done`ボタンをクリックする。そのTodoオブジェクトは完了として更新されるので、消滅する。
+
+未完了のToDOアイテムは、`getTodos()`メソッドで設定したクエリに基づいて取得される。
+
+次のステップでは、Todoを削除する作業を行う。
+
 # Firestoreのドキュメントを削除する
+
+ドキュメントを削除するには、`pages/index.tsx`に移動して、`deleteDoc()`関数をインポートし、以下のように削除機能を処理するメソッドを作成する。
 
 ```tsx
 import {deleteDoc} from "@firebase/firestore";
@@ -528,3 +536,5 @@ const deleteTodo = async (documentId:string) => {
 ```tsx
 <button type="button" onClick={() => deleteTodo(todo.id)}>Delete</button>
 ```
+
+取得したTodoアイテムの削除ボタンをクリックすると、そのオブジェクトはコレクションから削除される。
