@@ -367,3 +367,164 @@ useEffect( () => {
 上記では、TODOがあるかどうかをチェックするためのローディングテキストを表示している。もし何もなければメッセージを表示し、そうでなければ既存のTODOをマッピングする。
 
 この場合、Firestoreデータベースのセットアップ時にTodoを追加しているのでホームページからアクセスできるようになる。
+
+# Firestoreにドキュメントを追加する
+
+Firestoreにドキュメントを追加するには、新しいTodoのタイトルと説明を入力するためのフォームを作成しなければならない。
+
+`pages`フォルダに`add-todo.tsx`を作成して以下のコードを追加する。
+
+```tsx
+import type { NextPage } from 'next'
+import Head from "next/head";
+import { useState } from 'react';
+import styles from '../styles/Home.module.css'
+
+const AddTodo:NextPage = () => {
+
+   const [title,setTitle] = useState<string>(""); // title
+   const [description,setDescription] = useState<string>("");// description
+   const [error,setError] = useState<string>("");// error
+   const [message,setMessage] = useState<string>("");// message
+
+   const handleSubmit = (e: { preventDefault: () => void; }) => {
+     e.preventDefault(); // avoid default behaviour
+     
+     if(!title || !description){ // check for any null value
+       return setError("All fields are required");
+     }
+   }
+
+   return (
+     <div className={styles.container}>
+       <Head>
+         <title>Add todo</title>
+         <meta name="description" content="Next.js firebase todos app" />
+         <link rel="icon" href="/favicon.ico" />
+       </Head>
+       <div className={styles.main}>
+         <h1 className={styles.title}>
+           Add todo
+         </h1>
+         <form onSubmit={handleSubmit} className={styles.form}>
+           {
+             error ? (
+               <div className={styles.formGroup}>
+                 <p className={styles.error}>{error}</p>
+               </div>
+             ) : null
+           }
+           {
+             message ? (
+               <div className={styles.formGroup}>
+                 <p className={styles.success}>
+                   {message}. Proceed to <a href="/">Home</a>
+                 </p>
+               </div>
+             ) : null
+           }
+           <div className={styles.formGroup}>
+             <label>Title</label>
+             <input type="text" 
+             placeholder="Todo title" 
+             onChange={e => setTitle(e.target.value)} />
+           </div>
+           <div className={styles.formGroup}>
+             <label>Description</label>
+             <textarea 
+             placeholder="Todo description"  
+             onChange={e => setDescription(e.target.value)}
+             />
+           </div>
+           <div className={styles.formGroup}>
+             <button type="submit">Submit</button>
+           </div>
+         </form>
+       </div>
+     </div>
+   )
+}
+
+export default AddTodo;
+```
+
+タイトルと説明のフィールドを持つ基本的なフォームを設定している。また、フォームが送信されたときに呼び出される`handleSubmit`関数を用意している。
+
+今のところ、`null`をチェックするだけである。`Collection`にデータを送信するプログラムを書いてみよう。
+
+まず最初に、必要なモジュールをインポートする。
+
+```tsx
+import { doc } from '@firebase/firestore'; // for creating a pointer to our Document
+import { setDoc } from 'firebase/firestore'; // for adding the Document to Collection
+import { firestore } from '../firebase/clientApp'; // firestore instance
+```
+
+`todos`Collectionに新しいドキュメントを作成するために、`addTodo`関数を作成する。
+
+```tsx
+const addTodo = async () => {
+   // get the current timestamp
+   const timestamp: string = Date.now().toString();
+   // create a pointer to our Document
+   const _todo = doc(firestore, `todos/${timestamp}`);
+   // structure the todo data
+   const todoData = {
+     title,
+     description,
+     done: false
+   };
+   try {
+     //add the Document
+     await setDoc(_todo, todoData);
+     //show a success message
+     setMessage("Todo added successfully");
+     //reset fields
+     setTitle("");
+     setDescription("");
+   } catch (error) {
+     //show an error message
+     setError("An error occurred while adding todo");
+   }
+};
+```
+
+# Firestoreのドキュメントを更新する
+
+```tsx
+import {updateDoc} from "@firebase/firestore";
+
+const updateTodo = async (documentId: string) => {   
+   // create a pointer to the Document id
+   const _todo = doc(firestore,`todos/${documentId}`);
+   // update the doc by setting done to true
+   await updateDoc(_todo,{
+   "done":true
+   });
+   // retrieve todos
+   getTodos();
+}
+```
+
+```tsx
+<button type="button" onClick={() => updateTodo(todo.data().id)}>Mark as done</button>
+```
+
+# Firestoreのドキュメントを削除する
+
+```tsx
+import {deleteDoc} from "@firebase/firestore";
+
+const deleteTodo = async (documentId:string) => {
+   // create a pointer to the Document id
+   const _todo = doc(firestore,`todos/${documentId}`);
+   // delete the doc
+   await deleteDoc(_todo);
+   // retrieve todos
+   getTodos();
+}
+```
+
+```tsx
+<button type="button" onClick={() => deleteTodo(todo.id)}>Delete</button>
+```
