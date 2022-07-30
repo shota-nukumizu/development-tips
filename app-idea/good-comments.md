@@ -102,6 +102,8 @@ private func makeVersion() {
 
 **TODOコメントの目的は、「これはまだ完成していないこと」を第三者に伝えること**である。いつもこの類いのコメントを書くときに自分の名前をマーキングしておくと安心だ。
 
+レベルの高いプログラミングを行う上では良質なコメントを残すことは絶対に必要不可欠である。
+
 # 参考記事
 
 * [Comments: How Google Developers write their comments](https://medium.com/@paigeshin1991/comments-how-google-developers-write-their-comments-5443657ecc4b)
