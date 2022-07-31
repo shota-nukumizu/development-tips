@@ -83,6 +83,70 @@ async def read_root():
 }
 ```
 
+# スキーマ
+
+データがMongoDBに保存される方法を表す、データの基盤となるスキーマを定義してみよう。
+
+```py
+from typing import Optional
+
+from pydantic import BaseModel, EmailStr, Field
+
+
+class StudentSchema(BaseModel):
+    fullname: str = Field(...)
+    email: EmailStr = Field(...)
+    course_of_study: str = Field(...)
+    year: int = Field(..., gt=0, lt=9)
+    gpa: float = Field(..., le=4.0)
+
+    class Config:
+        schema_extra = {
+            "example": {
+                "fullname": "John Doe",
+                "email": "jdoe@x.edu.ng",
+                "course_of_study": "Water resources engineering",
+                "year": 2,
+                "gpa": "3.0",
+            }
+        }
+
+
+class UpdateStudentModel(BaseModel):
+    fullname: Optional[str]
+    email: Optional[EmailStr]
+    course_of_study: Optional[str]
+    year: Optional[int]
+    gpa: Optional[float]
+
+    class Config:
+        schema_extra = {
+            "example": {
+                "fullname": "John Doe",
+                "email": "jdoe@x.edu.ng",
+                "course_of_study": "Water resources and environmental engineering",
+                "year": 4,
+                "gpa": "4.0",
+            }
+        }
+
+
+def ResponseModel(data, message):
+    return {
+        "data": [data],
+        "code": 200,
+        "message": message,
+    }
+
+
+def ErrorResponseModel(error, code, message):
+    return {"error": error, "code": code, "message": message
+```
+
+上記のプログラムでは、`StudentSchema`というスキーマを定義した。これは、生徒のデータをMongoDBデータベースに保存する方法を表すものである。
+
+このスキーマでは、ユーザがAPIに対して適切な形でHTTPリクエストを送信するのに役立つ。
+
 # 参考記事
 
 * [Building a CRUD App with FastAPI and MongoDB](https://testdriven.io/blog/fastapi-mongo/)
