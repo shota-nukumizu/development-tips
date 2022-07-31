@@ -182,6 +182,42 @@ Build Info: {
 
 データベースとやり取りするための非同期MongoDBドライバであるMotorを設定する。まずは、要件ファイルに依存関係を追加する。
 
+```
+motor==2.5.1
+```
+
+インストールは以下のコマンドで実行
+
+```
+pip install -r requirements.txt
+```
+
+`app/server/database.py`
+
+```py
+import motor.motor_asyncio
+
+MONGO_DETAILS = "mongodb://localhost:27017"
+
+# 単なる参照なので、どちらもawaitは必要ない。
+client = motor.motor_asyncio.AsyncIOMotorClient(MONGO_DETAILS)
+
+database = client.students
+
+student_collection = database.get_collection("students_collection")
+
+# データベースクエリの結果をPythonのdictに変換するための簡単なhepler関数
+def student_helper(student) -> dict:
+    return {
+        "id": str(student["_id"]),
+        "fullname": student["fullname"],
+        "email": student["email"],
+        "course_of_study": student["course_of_study"],
+        "year": student["year"],
+        "GPA": student["gpa"],
+    }
+```
+
 # 参考記事
 
 * [Building a CRUD App with FastAPI and MongoDB](https://testdriven.io/blog/fastapi-mongo/)
