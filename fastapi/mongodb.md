@@ -147,6 +147,41 @@ def ErrorResponseModel(error, code, message):
 
 このスキーマでは、ユーザがAPIに対して適切な形でHTTPリクエストを送信するのに役立つ。
 
+# MongoDB
+
+このセクションでは、MongoDBとFastAPIを連携させる方法を解説する。
+
+## セットアップ
+
+インストール後、ガイドに従ってmongodデーモンプロセスを実行する。これが終了したら、`mongo`シェルコマンドでインスタンスに接続し、MongoDBが稼働しているかどうかを確認できる。
+
+```
+mongo
+```
+
+本チュートリアルではMongoDB Community Edition v5.0.6を使っている。
+
+```bash
+$ mongo --version
+
+MongoDB shell version v5.0.6
+
+Build Info: {
+    "version": "5.0.6",
+    "gitVersion": "212a8dbb47f07427dae194a9c75baec1d81d9259",
+    "modules": [],
+    "allocator": "system",
+    "environment": {
+        "distarch": "x86_64",
+        "target_arch": "x86_64"
+    }
+}
+```
+
+## Motorのセットアップ
+
+データベースとやり取りするための非同期MongoDBドライバであるMotorを設定する。まずは、要件ファイルに依存関係を追加する。
+
 # 参考記事
 
 * [Building a CRUD App with FastAPI and MongoDB](https://testdriven.io/blog/fastapi-mongo/)
