@@ -6,7 +6,7 @@
 
 Djangoとは、PythonでWebフレームワークを作成するためのフレームワークで、Webアプリケーションを作成する際に必要となるコンポーネントやAPIを多数提供している。
 
-本リポジトリでは、DjangoでREST APIを構築するライブラリ「Django REST Framework」を中心に解説を入れておきたい。
+本リポジトリでは、DjangoでREST APIを構築するライブラリ「Django REST Framework」を中心に解説を入れておきたい。**あと、FastAPIとの比較やデータベースとの連携方法を詳細に書いておきたい。(備忘録とメディアの設立のために)**
 
 # Django REST Frameworkの得意分野
 
