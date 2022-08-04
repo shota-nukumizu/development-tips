@@ -53,6 +53,29 @@ Flutterはアイコンやアニメーションのデザインも豊富に用意�
 
 Flutterはクロスプラットフォーム開発ゆえに、AndroidあるいはiOS固有の機能と連携することは苦手である。端末の固有機能をフル活用したアプリを開発したいなら、FlutterではなくSwiftやKotlinを推奨する。
 
+# Flutter活用事例
+
+Flutterを実務で活用している日本企業をいくつか紹介する。
+
+## じゃらん
+
+じゃらんは旅行先での宿やホテルを予約する際によく利用されている。従来は10年以上前からAndroidやiOSそれぞれのアプリをリリースしていたが、Flutterに切り替えることで保守運用のコストを削減することに成功している。
+
+参考資料：[Flutter移行の苦労と、乗り越えた先に得られたもの](https://speakerdeck.com/rtechkouhou/flutteryi-xing-falseku-lao-to-cheng-riyue-etaxian-nide-raretamofalse)
+
+## Green
+
+Greenは日本のIT人材の求人メディアだ。Flutterでモバイルアプリを開発できるプログラマーの人材確保に成功している。
+
+参考資料：[求人メディア Green の Android アプリを Flutter で開発した裏話 - note](https://note.com/raykaga/n/n52c1ee039331)
+
+## サイバーエージェント
+
+サイバーエージェントは広告業やWebメディア「Abema」を運用している日本の大企業である。Flutterを導入することで、「iOSとAndroidのアプリ間で発生する機能差」や「iOSとAndroidのエンジニアリングを共通化したい」という課題を両方解決できた。
+
+参考資料：[Flutter導入から見るクロスプラットフォーム開発のリアル - CyberAgent Way](https://www.cyberagent.co.jp/way/list/detail/id=26230)
+
+
 # Flutterロードマップ
 
 Flutter開発で押さえておきたい内容はざっくり以下の通り。
